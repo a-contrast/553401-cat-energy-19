@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [ALEXEY ZDOROVENKO](https://up.htmlacademy.ru/adaptive/19/user/553401).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
