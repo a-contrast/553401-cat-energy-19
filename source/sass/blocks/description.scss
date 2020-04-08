@@ -1,0 +1,58 @@
+.description {
+
+  &__title {
+    @include oswald-font(36px, 60px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    // padding-left: 80px;
+    @include arial-font(14px, 18px);
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &::before {
+      // content: url('img/panther.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #68b738;
+    }
+
+    &--natural {
+      &::before {
+        content: url("../img/advantage-leaf@1x.png");
+      }
+    }
+
+    &--water {
+      &::before {
+        content: url("../img/advantage-powder@1x.png");
+      }
+    }
+
+    &--food {
+      &::before {
+        content: url("../img/advantage-dining@1x.png");
+      }
+    }
+
+    &--time {
+      &::before {
+        content: url("../img/advantage-clock@1x.png");
+      }
+    }
+  }
+}

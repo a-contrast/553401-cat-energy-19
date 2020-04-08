@@ -4,24 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
-        alt="Интернет-магазин «Cat Energy»">
-    </a>
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+    <div class="page-header__wrapper wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+          alt="Интернет-магазин «Cat Energy»">
+      </a>
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+    </div>
+    <nav class="page-nav">
+      <ul class="page-nav__list">
+        <li class="page-nav__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="page-nav__item">
           <a>Каталог продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="page-nav__item">
           <a href="form.html">Подбор программы</a>
       </ul>
     </nav>
@@ -40,7 +43,7 @@
           <a class="catalog-item__link" href="chick500.html">
             <h4 class="catalog-item__title">Cat Energy PRO 500 г</h4>
           </a>
-          <ul class="card-item__specs-list specs-list">
+          <ul class="catalog-item__specs-list specs-list">
             <li class="specs-list__item">
               <span class="specs-list__field">Объем</span>
               <span class="specs-list__value">500 г</span>
@@ -65,7 +68,7 @@
           <a class="catalog-item__link" href="chick1000.html">
             <h4 class="catalog-item__title">Cat Energy PRO 1000 г</h4>
           </a>
-          <ul class="card-item__specs-list specs-list">
+          <ul class="catalog-item__specs-list specs-list">
             <li class="specs-list__item">
               <span class="specs-list__field">Объем</span>
               <span class="specs-list__value">1000 г</span>
@@ -90,7 +93,7 @@
           <a class="catalog-item__link" href="fish500.html">
             <h4 class="catalog-item__title">Cat Energy PRO 500 г</h4>
           </a>
-          <ul class="card-item__specs-list specs-list">
+          <ul class="catalog-item__specs-list specs-list">
             <li class="specs-list__item">
               <span class="specs-list__field">Объем</span>
               <span class="specs-list__value">500 г</span>
@@ -115,7 +118,7 @@
           <a class="catalog-item__link" href="fish1000.html">
             <h4 class="catalog-item__title">Cat Energy PRO 1000 г</h4>
           </a>
-          <ul class="card-item__specs-list specs-list">
+          <ul class="catalog-item__specs-list specs-list">
             <li class="specs-list__item">
               <span class="specs-list__field">Объем</span>
               <span class="specs-list__value">1000 г</span>
@@ -140,7 +143,7 @@
           <a class="catalog-item__link" href="buckwheat500.html">
             <h4 class="catalog-item__title">Cat Energy Slim 500 г</h4>
           </a>
-          <ul class="card-item__specs-list specs-list">
+          <ul class="catalog-item__specs-list specs-list">
             <li class="specs-list__item">
               <span class="specs-list__field">Объем</span>
               <span class="specs-list__value">500 г</span>
@@ -165,7 +168,7 @@
           <a class="catalog-item__link" href="buckwheat1000.html">
             <h4 class="catalog-item__title">Cat Energy Slim 1000 г</h4>
           </a>
-          <ul class="card-item__specs-list specs-list">
+          <ul class="catalog-item__specs-list specs-list">
             <li class="specs-list__item">
               <span class="specs-list__field">Объем</span>
               <span class="specs-list__value">1000 г</span>
@@ -190,7 +193,7 @@
           <a class="catalog-item__link" href="rice500.html">
             <h4 class="catalog-item__title">Cat Energy Slim 500 г</h4>
           </a>
-          <ul class="card-item__specs-list specs-list">
+          <ul class="catalog-item__specs-list specs-list">
             <li class="specs-list__item">
               <span class="specs-list__field">Объем</span>
               <span class="specs-list__value">500 г</span>
@@ -209,9 +212,9 @@
 
         <!-- Доработать крайний блок -->
         <li class="catalog__item catalog-item-last">
-          <span class="catalog-item__title">Показать еще 100500 товаров</span>
-          <span class="specs-list__value">На самом деле вкусов гораздо больше!</span>
-          <a class="catalog-item__button-all" href="newgoods.html">Показать все</a>
+          <span class="catalog-item-last__title">Показать еще 100500 товаров</span>
+          <span class="catalog-item-last__info">На самом деле вкусов гораздо больше!</span>
+          <a class="catalog-item-last__button-all" href="newgoods.html">Показать все</a>
         </li>
       </ul>
     </section>

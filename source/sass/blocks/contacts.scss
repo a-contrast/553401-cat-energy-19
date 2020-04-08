@@ -1,0 +1,19 @@
+.contacts {
+  display: flex;
+  padding-bottom: 400px;
+  background-image: url(../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+
+  &__title {
+    @include oswald-font(16px, 20px);
+    text-transform: uppercase;
+  }
+
+  &__adress {
+    @include arial-font(14px, 20px);
+    font-style: normal;
+  }
+
+}

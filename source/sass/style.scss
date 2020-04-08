@@ -1,0 +1,52 @@
+// ВРЕМЕННО
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+// КОНЕЦ ВРЕМЕННОГО БЛОКА
+@import "common.scss";
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/program.scss";
+@import "blocks/description.scss";
+@import "blocks/example.scss";
+@import "blocks/example-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+
