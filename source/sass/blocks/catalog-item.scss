@@ -3,7 +3,27 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 0 20px;
-  height: 210px;
+  padding-bottom: 24px;
+  min-height: 209px;
+  border: 1px solid $bg-main;
+  border-top: none;
+  &:first-child {
+    border-top: 1px solid $bg-main;
+  }
+
+  &:last-child {
+    flex-direction: column;
+  }
+}
+
+.catalog-item__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.catalog-item__img-link {
+  display: flex;
 }
 
 .catalog-item__card-specs {
@@ -13,6 +33,7 @@
 }
 
 .catalog-item__link {
+  margin-bottom: 14px;
   width: 80px;
   @include oswald-font(16px,20px);
   text-transform: uppercase;
@@ -40,6 +61,7 @@
 
 .catalog-item__show-all {
   width: 100%;
+  margin-bottom: 8px;
   padding-top: 80px;
   text-align: center;
   @include oswald-font(16px,20px);
@@ -48,6 +70,7 @@
 
 .catalog-item__info {
   width: 100%;
+  margin-bottom: 20px;
   text-align: center;
   @include arial-font(12px,16px);
 }

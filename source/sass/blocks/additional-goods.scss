@@ -1,11 +1,18 @@
+.additional-goods {
+  margin-bottom: 35px;
+}
+
 .additional-goods__title {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 8px 0;
   @include oswald-font(24px, 24px);
 }
 
 .additional-goods__stock {
   display: flex;
   justify-content: center;
-  height: 290px;
+  height: 289px;
   padding-top: 60px;
   background-color: $bg-second;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -17,7 +24,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 150px;
+  width: 165px;
   @include arial-font(16px, 20px);
   text-align: center;
   color: #ffffff;
@@ -27,8 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55px;
-    height: 60px;
-    margin-bottom: 50px;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 52px;
   }
 }

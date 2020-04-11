@@ -1,6 +1,9 @@
 .goods-list {
   display:flex;
   flex-direction: column;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
 }
 // .goods-list__button-buy {
 //   width: 100%;
@@ -15,17 +18,26 @@
 .goods-list__item {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $bg-main;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  &:first-child {
+    border-top: 1px solid $bg-main;
+  }
 }
 
 .goods-list__item-specs {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   @include arial-font(14px, 14px);
 }
 
 .goods-list__item-title {
+  margin-bottom: 12px;
   @include oswald-font(16px, 16px);
   text-transform: uppercase;
 }
