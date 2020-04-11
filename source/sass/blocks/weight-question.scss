@@ -1,0 +1,26 @@
+.weight-question {
+  display: flex;
+  border: 1px solid $bg-main;
+}
+
+.weight-question__label {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.weight-question__radio-box {
+  display: flex;
+  // position: absolute;
+  margin-right: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #ffffff, 0 0 0 9px $bg-main;
+}
+
+.weight-question__input:checked + .weight-question__radio-box {
+  background-color: $bg-second;
+}

@@ -38,95 +38,97 @@
       <h1 class="selection-program__title">Подбор программы</h1>
       <p class="selection-program__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="selection-program__form program-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="program-form__personal-data personal-data">
+        <fieldset class="program-form__fieldset personal-data">
           <legend class="visually-hidden">Персональные данные</legend>
             <label class="personal-data__item">Имя:*
               <input class="personal-data__input" id="name" type="text" name="name" placeholder="Барсик">
             </label>
 
             <label class="personal-data__item">Вес (кг):*
-              <input id="weight" type="number" name="weight-in-kg" placeholder="7">
+              <input class="personal-data__input" id="weight" type="number" name="weight-in-kg" placeholder="7">
             </label>
 
             <label class="personal-data__item">Возраст (лет):
-              <input id="age" type="number" name="age" placeholder="7">
+              <input class="personal-data__input" id="age" type="number" name="age" placeholder="7">
             </label>
 
         </fieldset>
 
-        <fieldset class="program-form__weight-question weight-question">
+        <fieldset class="program-form__fieldset weight-question">
           <legend class="visually-hidden">Выбор нужной программы</legend>
 
           <label class="weight-question__label">
-            <!-- <input class="visually-hidden" id="weight-down" type="radio" name="weight" value="weight-down" checked> -->
-            <input class="weight-question__radio-input" id="weight-down" type="radio" name="weight" value="weight-down"
-              checked>
+            <input class="weight-question__input visually-hidden" id="weight-down" type="radio" name="weight" value="weight-down" checked>
+            <!-- <input class="weight-question__radio-input" id="weight-down" type="radio" name="weight" value="weight-down"
+              checked> -->
             <span class="weight-question__radio-box"></span>
             Похудение
           </label>
 
           <label class="weight-question__label">
-            <!-- <input class="visually-hidden" id="weight-up" type="radio" name="weight" value="weight-up"> -->
-            <input class="weight-question__radio-input" id="weight-up" type="radio" name="weight" value="weight-up">
+            <input class="weight-question__input visually-hidden" id="weight-up" type="radio" name="weight" value="weight-up">
+            <!-- <input class="weight-question__radio-input" id="weight-up" type="radio" name="weight" value="weight-up"> -->
             <span class="weight-question__radio-box"></span>
             Набор массы
           </label>
 
           <label class="weight-question__label">
-            <!-- <input class="visually-hidden" id="weight-unknown" type="radio" name="weight" value="unknown"> -->
-            <input class="weight-question__radio-input" id="weight-unknown" type="radio" name="weight" value="unknown">
+            <input class="weight-question__input visually-hidden" id="weight-unknown" type="radio" name="weight" value="unknown">
+            <!-- <input class="weight-question__radio-input" id="weight-unknown" type="radio" name="weight" value="unknown"> -->
             <span class="weight-question__radio-box"></span>
             Не знаю (нужен ваш совет)
           </label>
 
         </fieldset>
 
-        <fieldset class="program-form__contacts form-contacts">
+        <fieldset class="program-form__fieldset form-contacts">
           <legend class="program-form__legend">Контактные данные (владельца кота)</legend>
-            <label class="form-contacts__item">E-mail:*
-              <input id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
+            <label class="form-contacts__item form-contacts__item--email">E-mail:*
+              <input class="form-contacts__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
             </label>
 
-            <label class="form-contacts__item">Телефон:*
-              <input id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+            <label class="form-contacts__item form-contacts__item--phone">Телефон:*
+              <input class="form-contacts__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
             </label>
 
         </fieldset>
 
-        <fieldset class="program-form__comment form-comment">
+        <fieldset class="program-form__fieldset form-comment">
           <legend class="program-form__legend">Комментарий</legend>
-          <label class="visually-hidden" for="comment">Расскажите про кота</>
-          <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <label class="visually-hidden" for="comment">Расскажите про кота</label>
+          <textarea class="form-comment__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="program-form__additional form-additional">
+        <fieldset class="program-form__fieldset form-additional">
           <legend class="program-form__legend">Дополнительно</legend>
+          <div class="form-additional__container">
           <label class="form-additional__label">
-            <!-- <input class="visually-hidden" id="sugar" type="checkbox" name="sugar" checked> -->
-            <input class="form-additional__check-input" id="sugar" type="checkbox" name="sugar" checked>
+            <input class="form-additional__input visually-hidden" id="sugar" type="checkbox" name="sugar" checked>
+            <!-- <input class="form-additional__check-input" id="sugar" type="checkbox" name="sugar" checked> -->
             <span class="form-additional__check-box"></span>
             Сахарозаменитель
           </label>
           <label class="form-additional__label">
-            <!-- <input class="visually-hidden" id="water" type="checkbox" name="water"> -->
-            <input class="form-additional__check-input" id="water" type="checkbox" name="water">
+            <input class="form-additional__input visually-hidden" id="water" type="checkbox" name="water">
+            <!-- <input class="form-additional__check-input" id="water" type="checkbox" name="water"> -->
             <span class="form-additional__check-box"></span>
             Питьевая вода
           </label>
           <label class="form-additional__label">
-            <!-- <input class="visually-hidden" id="milk" type="checkbox" name="milk"> -->
-            <input class="form-additional__check-input" id="milk" type="checkbox" name="milk">
+            <input class="form-additional__input visually-hidden" id="milk" type="checkbox" name="milk">
+            <!-- <input class="form-additional__check-input" id="milk" type="checkbox" name="milk"> -->
             <span class="form-additional__check-box"></span>
             Молоко
           </label>
           <label class="form-additional__label">
-            <!-- <input class="visually-hidden" id="vitamins" type="checkbox" name="vitamins"> -->
-            <input class="form-additional__check-input" id="vitamins" type="checkbox" name="vitamins">
+            <input class="form-additional__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+            <!-- <input class="form-additional__check-input" id="vitamins" type="checkbox" name="vitamins"> -->
             <span class="form-additional__check-box"></span>
             Витамины
           </label>
+          </div>
         </fieldset>
 
-        <button class="program-form__button" type="submit">Отправить заявку</button>
+        <button class="program-form__button button-main" type="submit">Отправить заявку</button>
         <span class="program-form__explanation">* - Обязательные поля</span>
       </form>
     </section>

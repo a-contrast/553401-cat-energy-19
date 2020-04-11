@@ -1,0 +1,8 @@
+.selection-program__title {
+  @include oswald-font(36px, 60px);
+}
+
+.selection-program__description {
+  @include oswald-font(14px, 18px);
+  text-transform: uppercase;
+}

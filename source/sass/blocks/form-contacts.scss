@@ -1,0 +1,39 @@
+.form-contacts__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-contacts__item {
+
+  &::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  // background: red;
+  }
+
+  &--email::after {
+    width: 17px;
+    height: 13px;
+    right: 15px;
+    background-image: url("../img/icon-mail.svg");
+    background-size: 17px 13px;
+  }
+
+  &--phone::after {
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    background-image: url("../img/icon-phone.svg");
+    background-size: 20px 20px;
+  }
+}
+
+.form-contacts__input {
+  flex-grow: 1;
+  margin-left: 10px;
+  height: 45px;
+  outline: none;
+  border: 2px solid $bg-main;
+}
