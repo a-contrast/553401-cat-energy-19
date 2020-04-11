@@ -1,0 +1,15 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    @include oswald-font(36px, 60px)
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}

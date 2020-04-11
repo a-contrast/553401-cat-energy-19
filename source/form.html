@@ -8,29 +8,30 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header container">
     <div class="page-header__wrapper wrapper">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150"
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="40"
           alt="Интернет-магазин «Cat Energy»">
       </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
-    </div>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>    </div>
     <nav class="page-nav">
-      <ul class="page-nav__list">
+      <ul class="page-nav__list list">
         <li class="page-nav__item">
-          <a href="index.html">Главная</a>
+          <a class="page-nav__link" href="index.html">Главная</a>
         </li>
         <li class="page-nav__item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="page-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="page-nav__item">
-          <a>Подбор программы</a>
+          <a  class="page-nav__link--active">Подбор программы</a>
       </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main container">
 
     <section class="selection-program">
       <!-- Возможно h1 нужно вынести за пределы section -->
@@ -130,35 +131,41 @@
       </form>
     </section>
 
-    <section class="contacts">
+    <section class="contacts contacts--bg-color">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <span class="contacts__title">Приглашаем к сотрудничеству дилеров!</span>
+      <div class="contacts__wrapper wrapper">
+        <span class="contacts__title">Приглашаем к сотрудничеству дилеров!</span>
       <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <!-- <img class="contacts__map" src="https://via.placeholder.com/150x150" width="150" height="150"
         alt="Карта как добраться"> -->
     </section>
   </main>
 
-  <footer class="page-footer">
-    <a class="page-footer__logo-title logo-title" href="index.html">
-      <img class="logo-title__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+  <footer class="page-footer wrapper container">
+    <a class="page-footer__logo-title logo-title">
+      <img class="logo-title__image" src="../img/logo-footer.svg" width="130" height="25"
         alt="Интернет-магазин «Cat Energy»">
     </a>
-    <ul class="page-footer__social social-list">
+    <ul class="page-footer__social social-list list">
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-          Инстаграме</a>
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">
+          <span class="visually-hidden">Мы в Инстаграме</span>
+        </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
-          Фейсбуке</a>
+        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">Мы в Фейсбуке</span>
+        </a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright">
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 </body>
