@@ -6,12 +6,23 @@
 }
 
 .program-form__fieldset {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
 .program-form__legend {
+  padding-left: 20px;
+  max-width: 220px;
   @include oswald-font(24px, 24px);
   text-transform: none;
+}
+
+.program-form__submit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .program-form__explanation {

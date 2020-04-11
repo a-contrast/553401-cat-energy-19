@@ -95,9 +95,11 @@
 
         <fieldset class="program-form__fieldset form-comment">
           <legend class="program-form__legend">Комментарий</legend>
-          <label class="visually-hidden" for="comment">Расскажите про кота</label>
-          <textarea class="form-comment__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+          <div class="form-comment__container">
+            <label class="visually-hidden" for="comment">Расскажите про кота</label>
+            <textarea class="form-comment__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          </fieldset>
         <fieldset class="program-form__fieldset form-additional">
           <legend class="program-form__legend">Дополнительно</legend>
           <div class="form-additional__container">
@@ -127,9 +129,10 @@
           </label>
           </div>
         </fieldset>
-
-        <button class="program-form__button button-main" type="submit">Отправить заявку</button>
-        <span class="program-form__explanation">* - Обязательные поля</span>
+        <div class="program-form__submit">
+          <button class="program-form__button button-main" type="submit">Отправить заявку</button>
+          <span class="program-form__explanation">* - Обязательные поля</span>
+        </div>
       </form>
     </section>
 

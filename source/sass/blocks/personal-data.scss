@@ -6,6 +6,8 @@
 .personal-data__item {
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .personal-data__input {
@@ -16,4 +18,3 @@
   outline: none;
   border: 2px solid $bg-main;
 }
-
