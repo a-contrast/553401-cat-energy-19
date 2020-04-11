@@ -1,13 +1,19 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $bg-main;
 
   &__logo-title {
     align-self: center;
+    margin-bottom: 16px;
+    padding: 10px;
   }
 
   &__copyright-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
     @include arial-font(16px, 16px);
     color: #444444;
     position: relative;
@@ -15,10 +21,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: -5px;
-      right: -170px;
-      width: 27px;
-      height: 34px;
+      top: -6px;
+      right: -173px;
+      width: 40px;
+      height: 40px;
       background-image: url(../img/htmlacademy.svg);
       background-repeat: no-repeat;
     }
