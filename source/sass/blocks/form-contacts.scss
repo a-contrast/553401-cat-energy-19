@@ -1,3 +1,8 @@
+.form-contacts {
+  padding-top: 14px;
+  margin-bottom: 8px;
+}
+
 .form-contacts__item {
   display: flex;
   align-items: center;
@@ -7,6 +12,12 @@
 .form-contacts__item {
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 10px;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::after {
   content: "";
@@ -36,6 +47,8 @@
   flex-grow: 1;
   margin-left: 10px;
   height: 45px;
+  padding-left: 15px;
+  padding-right: 40px;
   outline: none;
   border: 2px solid $bg-main;
 }

@@ -1,6 +1,8 @@
 .program-form {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  margin-bottom: 22px;
   @include oswald-font(16px, 18px);
   text-transform: uppercase;
 }
@@ -13,6 +15,8 @@
 
 .program-form__legend {
   padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 220px;
   @include oswald-font(24px, 24px);
   text-transform: none;
@@ -23,6 +27,11 @@
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+.program-form__button {
+  margin-bottom: 21px;
 }
 
 .program-form__explanation {

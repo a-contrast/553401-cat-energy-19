@@ -37,3 +37,9 @@
   background-color: $bg-second;
   border: none;
 }
+
+.upper-oswald {
+  @include oswald-font(16px,18px);
+  text-transform: uppercase;
+  color: #444444;
+}
