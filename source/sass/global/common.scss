@@ -31,7 +31,7 @@
   width: 100%;
   padding: 10px 0;
   @include oswald-font(16px,20px);
-  color: #ffffff;
+  color: $btn-txt-color;
   text-align: center;
   text-transform: uppercase;
   background-color: $bg-second;

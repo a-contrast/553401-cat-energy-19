@@ -27,7 +27,7 @@
   width: 165px;
   @include arial-font(16px, 20px);
   text-align: center;
-  color: #ffffff;
+  color: $btn-txt-color;
 
   &::before {
     content: url("../img/icon-gift.png");

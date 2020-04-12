@@ -18,12 +18,12 @@
 .goods-list__item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid $bg-main;
+  border-bottom: 1px solid #cdcdcd;
   padding-top: 14px;
   padding-bottom: 17px;
 
   &:first-child {
-    border-top: 1px solid $bg-main;
+    border-top: 1px solid #cdcdcd;
   }
 }
 
