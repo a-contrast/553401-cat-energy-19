@@ -1,8 +1,6 @@
 .contacts {
   min-height: 475px;
-  // padding-top: 20px;
-  // padding-bottom: 400px;
-  background-image: url(../img/bg-map-mobile@1x.png);
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -24,7 +22,7 @@
   display: flex;
   padding-top: 28px;
   padding-bottom: 27px;
-  background-color: #ffffff;
+  background-color: $standart-color;
 
   &--bg-color {
     background-color: $bg-main;

@@ -18,7 +18,7 @@
     padding-top: 10px;
     padding-bottom: 15px;
     text-align: center;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-color-4;
     border-radius: 3px;
     @include oswald-font(24px, 24px);
     text-transform: uppercase;

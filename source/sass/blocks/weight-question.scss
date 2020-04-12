@@ -14,15 +14,13 @@
 
 .weight-question__radio-box {
   display: flex;
-  // position: absolute;
   margin-left: 20px;
   margin-right: 17px;
   width: 28px;
   height: 28px;
-  background-color: #ffffff;
-  border: 8px solid #ffffff;
+  background-color: $radio-color;
+  border: 8px solid $radio-color;
   border-radius: 50%;
-  // box-shadow: 0 0 0 8px #ffffff, 0 0 0 9px $bg-main;
   box-shadow: 0 0 0 1px $bg-main;
 }
 

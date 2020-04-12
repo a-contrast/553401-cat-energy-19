@@ -41,5 +41,5 @@
 .upper-oswald {
   @include oswald-font(16px,18px);
   text-transform: uppercase;
-  color: #444444;
+  color: $input-color;
 }

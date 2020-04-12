@@ -19,11 +19,12 @@
     margin-bottom: 0;
   }
 
+//НАДО БЫ ПОПРОБОВАТЬ after СДЕЛАТЬ content-ом, а не background-ом
+
   &::after {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
-  // background: red;
   }
 
   &--email::after {

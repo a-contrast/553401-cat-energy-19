@@ -1,61 +1,62 @@
 .program {
   display: flex;
   flex-direction: column;
-  // padding-top: 22px;
 
   &__item {
     margin-bottom: 20px;
-    padding: 0 20px;
     padding-top: 20px;
     padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: $bg-main;
   }
 
   &__title {
     margin: 0;
-    padding: 0;
+    padding: 4px 0;
     display: flex;
     align-items: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    // padding-left: 50px;
     @include oswald-font(24px, 37px);
     text-transform: uppercase;
+
+//В данном месте, наверно, правильно было бы всавить иконки абсолютом,
+//либо круг нарисовать и вставить только иконки кошек т.к. выравнивание
+//должно идти по зеленому кругу, в общем, подумать
+
     &::before {
       content: "";
       display: flex;
       justify-content: center;
-      align-items: center;
       margin-right: 20px;
-      // background-color: $bg-second;
-      // border-radius: 50%;
+      width: 50px;
+      height: 50px;
     }
 
     &--slim {
       &::before {
         content: url("../img/icon-cat-slim.png");
-        width: 50px;
-        height: 50px;
       }
     }
 
     &--pro {
       &::before {
         content: url("../img/icon-cat-pro.png");
-        width: 50px;
-        height: 50px;
       }
     }
   }
 
   &__description {
-    margin: 0;
+    margin-top: 0;
     margin-bottom: 15px;
-    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 18px;
     padding-bottom: 22px;
+    padding-left: 0;
+    padding-right: 0;
+
     @include arial-font(14px, 18px);
-    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-bottom: 1px solid $border-color-3;
   }
 
   &__button {

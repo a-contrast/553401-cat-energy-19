@@ -3,8 +3,10 @@
 }
 
 .additional-goods__title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 26px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 8px 0;
   @include oswald-font(24px, 24px);
 }
@@ -31,11 +33,7 @@
 
   &::before {
     content: url("../img/icon-gift.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px;
+    padding: 5px;
     margin-bottom: 52px;
   }
 }
