@@ -14,8 +14,9 @@
 
   &__value {
     width: 124px;
-    height: 56px;
+    min-height: 56px;
     padding-top: 10px;
+    padding-bottom: 15px;
     text-align: center;
     border: 1px solid #cdcdcd;
     border-radius: 3px;
