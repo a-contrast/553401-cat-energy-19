@@ -16,7 +16,7 @@
   padding: 0;
   border: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
+  // -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -30,16 +30,22 @@
 .button-main {
   width: 100%;
   padding: 10px 0;
-  @include oswald-font(16px,20px);
+
+  @include font-oswald(16px,20px);
   color: $btn-txt-color;
   text-align: center;
   text-transform: uppercase;
-  background-color: $bg-second;
+  background-color: $bg-main;
   border: none;
+
+  &--bg-second {
+    color: $link-color;
+    background-color: $bg-second;
+  }
 }
 
 .upper-oswald {
-  @include oswald-font(16px,18px);
+  @include font-oswald(16px,18px);
   text-transform: uppercase;
   color: $input-color;
 }

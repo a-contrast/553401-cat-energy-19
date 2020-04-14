@@ -5,28 +5,27 @@
   background-size: 100%;
   background-position: bottom;
   background-clip: border-box;
-
-  &__title {
-    min-width: 140px;
-    @include oswald-font(16px, 20px);
-    text-transform: uppercase;
-  }
-
-  &__address {
-    @include arial-font(14px, 20px);
-    font-style: normal;
-  }
 }
 
 .contacts__wrapper {
   display: flex;
   padding-top: 28px;
   padding-bottom: 27px;
-  background-color: $standart-color;
+  background-color: $standard-color;
 
   &--bg-color {
-    background-color: $bg-main;
+    background-color: $bg-second;
   }
 }
 
+.contacts__title {
+  min-width: 140px;
 
+  @include font-oswald(16px, 20px);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include font-arial(14px, 20px);
+  font-style: normal;
+}

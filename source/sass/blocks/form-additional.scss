@@ -1,7 +1,7 @@
 .form-additional {
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .form-additional__container {
@@ -14,7 +14,7 @@
 .form-additional__label {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .form-additional__check-box {
@@ -22,7 +22,7 @@
   margin-right: 16px;
   width: 30px;
   height: 30px;
-  border: 1px solid $bg-main;
+  border: 1px solid $bg-second;
 }
 
 .form-additional__input:checked + .form-additional__check-box {

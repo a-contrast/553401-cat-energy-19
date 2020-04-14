@@ -2,25 +2,20 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 0;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 24px;
   min-height: 209px;
   border: 1px solid $border-color-1;
   border-top: none;
+
   &:first-child {
     border-top: 1px solid $border-color-1;
-  }
-
-  &:last-child {
-    flex-direction: column;
   }
 }
 
 .catalog-item__title {
   margin: 0;
-  padding: 0;
   font-weight: 400;
 }
 
@@ -37,23 +32,14 @@
 .catalog-item__link {
   margin-bottom: 14px;
   width: 80px;
-  @include oswald-font(16px,20px);
+
+  @include font-oswald(16px,20px);
   text-transform: uppercase;
   color: $link-color;
 }
 
 .catalog-item__specs-list {
-  @include arial-font(12px,16px);
-}
-
-.catalog-item__button-buy {
-  width: 100%;
-  padding: 10px 0;
-  @include oswald-font(16px,20px);
-  color: $btn-txt-color;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: $bg-second;
+  @include font-arial(12px,16px);
 }
 
 .specs-list__item {
@@ -66,7 +52,8 @@
   margin-bottom: 8px;
   padding-top: 80px;
   text-align: center;
-  @include oswald-font(16px,20px);
+
+  @include font-oswald(16px,20px);
   text-transform: uppercase;
 }
 
@@ -74,15 +61,6 @@
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
-  @include arial-font(12px,16px);
-}
 
-.catalog-item__button-all {
-  width: 100%;
-  padding: 10px 0;
-  @include oswald-font(16px,20px);
-  text-transform: uppercase;
-  text-align: center;
-  color: $link-color;
-  background-color: $bg-main;
+  @include font-arial(12px,16px);
 }

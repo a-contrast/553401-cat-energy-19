@@ -7,24 +7,20 @@
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.form-contacts__item {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 10px;
   margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-//НАДО БЫ ПОПРОБОВАТЬ after СДЕЛАТЬ content-ом, а не background-ом
+  // НАДО БЫ ПОПРОБОВАТЬ after СДЕЛАТЬ content-ом, а не background-ом
 
   &::after {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
   }
 
   &--email::after {
@@ -51,5 +47,5 @@
   padding-left: 15px;
   padding-right: 40px;
   outline: none;
-  border: 2px solid $bg-main;
+  border: 2px solid $bg-second;
 }

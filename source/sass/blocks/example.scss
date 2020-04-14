@@ -1,44 +1,39 @@
 .example {
+  padding-top: 17px;
+  background-color: $bg-second;
+}
+
+.example__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 17px;
-  background-color: $bg-main;
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.example__title {
+  margin-top: 0;
+  margin-bottom: 10px;
 
-  &__title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    @include oswald-font(36px, 60px);
-  }
+  @include font-oswald(36px, 60px);
+}
 
-  &__description {
-    margin: 0;
-    padding: 13px 0;
-    @include arial-font(14px, 18px);
-    letter-spacing: 0.01px;
-  }
+.example__description {
+  margin: 0;
+  padding: 13px 0;
 
-  &__total {
-    margin-top: 0;
-    margin-bottom: 14px;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 20px 0;
-    @include oswald-font(14px, 20px);
-    text-transform: uppercase;
-    align-self: center;
-  }
+  @include font-arial(14px, 18px);
+  letter-spacing: 0.01px;
+}
 
+.example__total {
+  margin-top: 0;
+  margin-bottom: 14px;
+  padding: 20px 0;
+
+  @include font-oswald(14px, 20px);
+  text-transform: uppercase;
+  align-self: center;
 }
 
 .example__image {
   // ВРЕМЕННО (надо сверстать блок было-стало)
-  margin-bottom: 88px;
+  margin-bottom: 84px;
 }

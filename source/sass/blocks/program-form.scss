@@ -3,7 +3,8 @@
   flex-direction: column;
   padding-top: 20px;
   margin-bottom: 22px;
-  @include oswald-font(16px, 18px);
+
+  @include font-oswald(16px, 18px);
   text-transform: uppercase;
 }
 
@@ -18,7 +19,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 220px;
-  @include oswald-font(24px, 24px);
+
+  @include font-oswald(24px, 24px);
   text-transform: none;
 }
 
@@ -35,7 +37,7 @@
 }
 
 .program-form__explanation {
-  @include arial-font(14px, 16px);
+  @include font-arial(14px, 16px);
   text-transform: none;
   text-align: center;
 }

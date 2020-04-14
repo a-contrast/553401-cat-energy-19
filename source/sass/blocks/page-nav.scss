@@ -1,17 +1,16 @@
-.page-nav {
-  &__list {
-    text-transform: uppercase;
-  }
+.page-nav__list {
+  text-transform: uppercase;
+}
 
-  &__item {
-    text-align: center;
-    border-bottom: 1px solid $border-color-2;
-  }
-  &__link {
-    display: flex;
-    justify-content: center;
-    color: $link-color;
-    padding-bottom: 23px;
-    padding-top: 22px;
-  }
+.page-nav__item {
+  text-align: center;
+  border-bottom: 1px solid $border-color-2;
+}
+
+.page-nav__link {
+  display: flex;
+  justify-content: center;
+  color: $link-color;
+  padding-bottom: 23px;
+  padding-top: 22px;
 }

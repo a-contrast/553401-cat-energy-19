@@ -1,69 +1,67 @@
 .program {
   display: flex;
   flex-direction: column;
+}
 
-  &__item {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: $bg-main;
-  }
+.program__item {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $bg-second;
+}
 
-  &__title {
-    margin: 0;
-    padding: 4px 0;
+.program__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 4px 0;
+
+  @include font-oswald(24px, 37px);
+  text-transform: uppercase;
+
+  // В данном месте, наверно, правильно было бы вставить иконки абсолютом,
+  // либо круг нарисовать и вставить только иконки кошек т.к. выравнивание
+  // должно идти по зеленому кругу, в общем, подумать
+
+  &::before {
+    content: "";
     display: flex;
-    align-items: center;
-    @include oswald-font(24px, 37px);
-    text-transform: uppercase;
+    justify-content: center;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
 
-//В данном месте, наверно, правильно было бы всавить иконки абсолютом,
-//либо круг нарисовать и вставить только иконки кошек т.к. выравнивание
-//должно идти по зеленому кругу, в общем, подумать
-
+  &--slim {
     &::before {
-      content: "";
-      display: flex;
-      justify-content: center;
-      margin-right: 20px;
-      width: 50px;
-      height: 50px;
-    }
-
-    &--slim {
-      &::before {
-        content: url("../img/icon-cat-slim.png");
-      }
-    }
-
-    &--pro {
-      &::before {
-        content: url("../img/icon-cat-pro.png");
-      }
+      content: url("../img/icon-cat-slim.png");
     }
   }
 
-  &__description {
-    margin-top: 0;
-    margin-bottom: 15px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 18px;
-    padding-bottom: 22px;
-    padding-left: 0;
-    padding-right: 0;
-
-    @include arial-font(14px, 18px);
-    border-bottom: 1px solid $border-color-3;
+  &--pro {
+    &::before {
+      content: url("../img/icon-cat-pro.png");
+    }
   }
+}
 
-  &__button {
-    display: inline-block;
-    padding: 5px 0px;
-    color: $link-color;
-    @include oswald-font(16px, 16px);
-    text-transform: uppercase;
-  }
+.program__description {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+
+  @include font-arial(14px, 18px);
+  border-bottom: 1px solid $border-color-3;
+}
+
+.program__button {
+  display: inline-block;
+  padding: 5px 0;
+  color: $link-color;
+
+  @include font-oswald(16px, 16px);
+  text-transform: uppercase;
 }

@@ -1,11 +1,7 @@
 .goods-list {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  margin-top: 0;
   margin-bottom: 39px;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
 }
 
 .goods-list__item {
@@ -23,16 +19,15 @@
 .goods-list__item-specs {
   display: flex;
   justify-content: space-between;
-  margin-top: 0;
   margin-bottom: 15px;
   margin-left: 0;
-  margin-right: 0;
-  padding: 0;
-  @include arial-font(14px, 14px);
+
+  @include font-arial(14px, 14px);
 }
 
 .goods-list__item-title {
   margin-bottom: 12px;
-  @include oswald-font(16px, 16px);
+
+  @include font-oswald(16px, 16px);
   text-transform: uppercase;
 }
