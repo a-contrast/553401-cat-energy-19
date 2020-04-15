@@ -1,0 +1,33 @@
+.goods-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+
+.goods-list__item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $border-color-4;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  &:first-child {
+    border-top: 1px solid $border-color-4;
+  }
+}
+
+.goods-list__item-specs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-left: 0;
+
+  @include font-arial(14px, 14px);
+}
+
+.goods-list__item-title {
+  margin-bottom: 12px;
+
+  @include font-oswald(16px, 16px);
+  text-transform: uppercase;
+}

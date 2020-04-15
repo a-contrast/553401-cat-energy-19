@@ -1,0 +1,24 @@
+.personal-data {
+  display: flex;
+  border: none;
+  margin-bottom: 9px;
+}
+
+.personal-data__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.personal-data__input {
+  position: relative;
+  flex-grow: 1;
+  margin-left: 15px;
+  padding-left: 13px;
+  padding-right: 13px;
+  height: 45px;
+  outline: none;
+  border: 2px solid $bg-second;
+}

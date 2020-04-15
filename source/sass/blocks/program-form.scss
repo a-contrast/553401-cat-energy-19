@@ -1,0 +1,43 @@
+.program-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-bottom: 22px;
+
+  @include font-oswald(16px, 18px);
+  text-transform: uppercase;
+}
+
+.program-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.program-form__legend {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 220px;
+
+  @include font-oswald(24px, 24px);
+  text-transform: none;
+}
+
+.program-form__submit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+.program-form__button {
+  margin-bottom: 21px;
+}
+
+.program-form__explanation {
+  @include font-arial(14px, 16px);
+  text-transform: none;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+@mixin font-oswald($size: 14px, $line-height: 1.29) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin font-arial($size: 14px, $line-height: 1.29) {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line-height;
+}

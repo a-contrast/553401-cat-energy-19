@@ -1,0 +1,36 @@
+.additional-goods {
+  margin-bottom: 35px;
+}
+
+.additional-goods__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+
+  @include font-oswald(24px, 40px);
+}
+
+.additional-goods__stock {
+  height: 289px;
+  padding-top: 60px;
+  background-color: $bg-main;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.additional-goods__stock-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 165px;
+
+  @include font-arial(16px, 20px);
+  text-align: center;
+  color: $btn-txt-color;
+
+  &::before {
+    content: url("../img/icon-gift.png");
+    padding: 5px;
+    margin-bottom: 52px;
+  }
+}

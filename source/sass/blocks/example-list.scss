@@ -1,0 +1,38 @@
+.example-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.example-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  position: relative;
+}
+
+.example-list__value {
+  width: 124px;
+  min-height: 56px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  text-align: center;
+  border: 1px solid $border-color-4;
+  border-radius: 3px;
+
+  @include font-oswald(24px, 24px);
+  text-transform: uppercase;
+}
+
+.example-list__field {
+  width: 85px;
+  position: absolute;
+  bottom: -15px;
+  background: $bg-second;
+  display: block;
+
+  @include font-arial(12px, 12px);
+  text-align: center;
+}

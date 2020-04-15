@@ -1,0 +1,33 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $bg-second;
+}
+
+.page-footer__logo-title {
+  align-self: center;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.page-footer__copyright-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  @include font-arial(16px, 16px);
+  color: $copyright-color;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -173px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
+}

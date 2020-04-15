@@ -1,0 +1,31 @@
+.contacts {
+  min-height: 475px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-clip: border-box;
+}
+
+.contacts__wrapper {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  background-color: $standard-color;
+
+  &--bg-color {
+    background-color: $bg-second;
+  }
+}
+
+.contacts__title {
+  min-width: 140px;
+
+  @include font-oswald(16px, 20px);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include font-arial(14px, 20px);
+  font-style: normal;
+}

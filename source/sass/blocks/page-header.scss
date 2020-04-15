@@ -1,0 +1,35 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  @include font-oswald(20px, 20px);
+  font-weight: 500;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid $border-color-2;
+}
+
+.page-header__logo {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.page-header__logo--main-page {
+  cursor: auto;
+}
+
+.page-header__toggle {
+  width: 24px;
+  height: 18px;
+  margin-right: 12px;
+  padding: 20px;
+  background: url("../img/icon-mobile-menu.svg") no-repeat 50%;
+  background-size: 24px 18px;
+  border: none;
+  cursor: pointer;
+}
