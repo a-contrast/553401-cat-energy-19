@@ -1,7 +1,7 @@
 .form-additional {
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
 }
 
 .form-additional__container {
@@ -14,7 +14,11 @@
 .form-additional__label {
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form-additional__check-box {

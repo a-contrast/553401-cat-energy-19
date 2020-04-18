@@ -1,7 +1,7 @@
 
 .form-comment {
   padding-top: 15px;
-  margin-bottom: 6px;
+  // margin-bottom: 6px;
 }
 
 .form-comment__textarea {
@@ -13,6 +13,7 @@
 }
 
 .form-comment__container {
+  display: flex;
   padding-left: 20px;
   padding-right: 20px;
 }

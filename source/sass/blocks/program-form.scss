@@ -9,19 +9,38 @@
 }
 
 .program-form__fieldset {
+  position: relative;
   padding: 0;
   margin: 0;
   border: none;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #68b738;
+    width: 100%;
+    height: 3px;
+    top: 22px;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .program-form__legend {
+  display: inline-block;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
   padding-bottom: 20px;
-  max-width: 220px;
+  background: white;
 
   @include font-oswald(24px, 24px);
   text-transform: none;
+}
+
+.program-form__legend-span {
+  display: inherit;
 }
 
 .program-form__submit {
