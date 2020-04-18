@@ -34,16 +34,12 @@
     height: 50px;
   }
 
-  &--slim {
-    &::before {
+  &--slim::before {
       content: url("../img/icon-cat-slim.png");
-    }
   }
 
-  &--pro {
-    &::before {
+  &--pro::before {
       content: url("../img/icon-cat-pro.png");
-    }
   }
 }
 
