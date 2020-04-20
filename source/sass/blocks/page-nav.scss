@@ -1,5 +1,10 @@
 .page-nav__list {
   text-transform: uppercase;
+  overflow: hidden;
+
+  &--close {
+    height: 0;
+  }
 }
 
 .page-nav__item {

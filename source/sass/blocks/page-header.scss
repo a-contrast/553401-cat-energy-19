@@ -28,8 +28,12 @@
   height: 18px;
   margin-right: 12px;
   padding: 20px;
-  background: url("../img/icon-mobile-menu.svg") no-repeat 50%;
+  background: url("../img/icon-close.svg") no-repeat 50%;
   background-size: 24px 18px;
   border: none;
   cursor: pointer;
+
+  &--close {
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
 }

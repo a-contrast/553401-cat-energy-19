@@ -1,16 +1,34 @@
 .additional-goods {
+  position: relative;
   margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #68b738;
+    width: 100%;
+    height: 3px;
+    top: 22px;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .additional-goods__title {
+  display: inline-block;
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include font-oswald(24px, 40px);
+  background: $standard-color;
 }
 
 .additional-goods__stock {
   height: 289px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 60px;
   background-color: $bg-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");

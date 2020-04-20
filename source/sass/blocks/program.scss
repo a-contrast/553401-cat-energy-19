@@ -6,7 +6,7 @@
 .program__item {
   margin-bottom: 20px;
   padding-top: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: $bg-second;
@@ -34,22 +34,18 @@
     height: 50px;
   }
 
-  &--slim {
-    &::before {
-      content: url("../img/icon-cat-slim.png");
-    }
+  &--slim::before {
+    content: url("../img/icon-cat-slim.png");
   }
 
-  &--pro {
-    &::before {
-      content: url("../img/icon-cat-pro.png");
-    }
+  &--pro::before {
+    content: url("../img/icon-cat-pro.png");
   }
 }
 
 .program__description {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-top: 18px;
   padding-bottom: 22px;
 
@@ -58,10 +54,32 @@
 }
 
 .program__button {
-  display: inline-block;
-  padding: 5px 0;
-  color: $link-color;
+  position: relative;
+  padding-right: 12px;
 
   @include font-oswald(16px, 16px);
   text-transform: uppercase;
+  color: $link-color;
+  background-color: $bg-second;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    width: 34px;
+    height: 15px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+    transform: translateX(-11px);
+    transition: transform 0.5s ease;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    transform: translateX(-1px);
+  }
+
+  &:focus::after {
+    transform: translateX(-1px);
+  }
 }
