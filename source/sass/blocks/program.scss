@@ -35,11 +35,11 @@
   }
 
   &--slim::before {
-      content: url("../img/icon-cat-slim.png");
+    content: url("../img/icon-cat-slim.png");
   }
 
   &--pro::before {
-      content: url("../img/icon-cat-pro.png");
+    content: url("../img/icon-cat-pro.png");
   }
 }
 
@@ -76,6 +76,10 @@
   }
 
   &:hover::after {
+    transform: translateX(-1px);
+  }
+
+  &:focus::after {
     transform: translateX(-1px);
   }
 }
