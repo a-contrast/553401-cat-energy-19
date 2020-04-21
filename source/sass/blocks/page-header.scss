@@ -10,12 +10,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 11px;
   border-bottom: 1px solid $border-color-2;
 }
 
 .page-header__logo {
   margin-left: 20px;
+  padding-bottom: 4px;
   cursor: pointer;
 }
 

@@ -1,6 +1,7 @@
 .page-nav__list {
   text-transform: uppercase;
   overflow: hidden;
+  transition: height 0.8s ease;
 
   &--close {
     height: 0;

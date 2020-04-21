@@ -1,17 +1,6 @@
 .additional-goods {
   position: relative;
   margin-bottom: 35px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background: #68b738;
-    width: 100%;
-    height: 3px;
-    top: 22px;
-    right: 0;
-    z-index: -1;
-  }
 }
 
 .additional-goods__title {
