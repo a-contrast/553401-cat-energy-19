@@ -56,6 +56,11 @@
   @include font-oswald(16px,18px);
   text-transform: uppercase;
   color: $input-color;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .title-after {
@@ -68,6 +73,10 @@
     top: 22px;
     right: 0;
     z-index: -1;
+
+    @media (min-width: 768px) {
+      top: 29px;
+    }
   }
 }
 
