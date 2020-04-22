@@ -5,16 +5,29 @@
   background-size: 100%;
   background-position: bottom;
   background-clip: border-box;
+
+  @media (min-width: 768px) {
+    min-height: 560px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-position: 0 160px;
+  }
 }
 
 .contacts__wrapper {
   display: flex;
+  justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 27px;
   background-color: $standard-color;
 
   &--bg-color {
     background-color: $bg-second;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 71px;
+    padding-right: 71px;
+    padding-bottom: 58px;
   }
 }
 
@@ -23,9 +36,31 @@
 
   @include font-oswald(16px, 20px);
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    width: 160px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .contacts__address {
   @include font-arial(14px, 20px);
   font-style: normal;
+
+  @media (min-width: 768px) {
+    width: 160px;
+    text-align: end;
+    font-size: 16px;
+  }
+
+}
+
+.contacts__address-span {
+  display: block;
+
+  @media (min-width: 768px) {
+    margin-top: 18px;
+  }
+
 }

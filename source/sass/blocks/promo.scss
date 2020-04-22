@@ -12,7 +12,18 @@
   @include font-oswald(36px, 36px);
   color: $promo-color;
   text-align: center;
+
+  @media (min-width: 768px) {
+    position: relative;
+    // min-height: 780px;
+    margin-left: 120px;
+    background: none;
+    color: $link-color;
+    text-align: left;
+    align-items: flex-start;
+  }
 }
+
 
 .promo__title {
   margin-top: 28px;
@@ -20,6 +31,14 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    width: 420px;
+    margin-bottom: 41px;
+    color: $link-color;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promo__span {
@@ -27,13 +46,33 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__image {
   margin-bottom: 2px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .promo__button {
   width: calc(100% - 40px);
   font-size: 14px;
+
+  @media (min-width: 768px) {
+    // ВРЕМЕННО
+    margin-bottom: 507px;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 0;
+  }
 }

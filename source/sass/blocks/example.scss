@@ -2,6 +2,16 @@
   padding-top: 17px;
   padding-bottom: 11px;
   background-color: $bg-second;
+
+  @media (min-width: 768px) {
+    padding-top: 43px;
+    padding-bottom: 50px;
+    margin-bottom: 37px;
+    border-top: 1px solid $border-color-2;
+    // background-color: $standard-color;
+    background: linear-gradient(to top, $bg-second 0px, $bg-second 462px, $standard-color 462px, $standard-color 100%);
+  }
+
 }
 
 .example__wrapper {
@@ -14,6 +24,13 @@
   margin-bottom: 10px;
 
   @include font-oswald(36px, 60px);
+
+  @media (min-width: 768px) {
+    margin-bottom: 51px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
 }
 
 .example__description {
@@ -22,6 +39,23 @@
 
   @include font-arial(14px, 18px);
   letter-spacing: 0.01px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 680px;
+  }
+
+}
+
+.example__list-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    // ВРЕМЕННО
+    margin-bottom: 328px;
+  }
 }
 
 .example__total {
@@ -31,13 +65,29 @@
 
   @include font-oswald(14px, 20px);
   text-transform: uppercase;
-  align-self: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+}
+
+.example__total-span {
+  @media (min-width: 768px) {
+    display: block;
+    padding-top: 8px;
+  }
 }
 
 .example__image-container {
   display: flex;
   width: 320px;
   height: 240px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 7px;
   overflow: hidden;
 }
@@ -56,9 +106,14 @@
   align-items: center;
   margin: 0 auto;
   padding-left: 2px;
-  width: 220px;
+  // width: 220px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .example__progress-bar {
@@ -70,6 +125,14 @@
   background-color: $standard-color;
   border: 1px solid $border-color-4;
   border-radius: 6px;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 6px;
+    padding: 0;
+    margin: 0 20px;
+    border: 3px solid $border-color-5;
+  }
 }
 
 .example__range-button {
@@ -78,7 +141,7 @@
 
   @include font-oswald(16px, 20px);
   text-transform: uppercase;
-  background-color: $bg-second;
+  background-color: $transparent;
   border: none;
 
   &--before {
@@ -87,6 +150,21 @@
 
   &--after {
     text-align: start;
+  }
+
+  @media (min-width: 768px) {
+    width: auto;
+    padding: 5px 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--before {
+      text-align: start;
+    }
+
+    &--after {
+      text-align: end;
+    }
   }
 }
 
@@ -100,5 +178,22 @@
 
   &--right {
     transform: translateX(37px);
+  }
+
+  @media (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+    top: -17px;
+    left: -12px;
+    background-color: $bg-main;
+    border: 12px solid $standard-color;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px $bg-second,
+      0 3px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: transform 1.5s ease;
+
+    &--right {
+      transform: translateX(416px);
+    }
   }
 }
