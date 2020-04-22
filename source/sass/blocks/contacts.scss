@@ -7,9 +7,9 @@
   background-clip: border-box;
 
   @media (min-width: 768px) {
-    min-height: 560px;
+    min-height: 597px;
     background-image: url("../img/bg-map-tablet@1x.png");
-    background-position: 0 160px;
+    background-position: 0 197px;
   }
 }
 
@@ -27,6 +27,7 @@
   @media (min-width: 768px) {
     padding-left: 71px;
     padding-right: 71px;
+    padding-top: 65px;
     padding-bottom: 58px;
   }
 }

@@ -13,6 +13,38 @@
   &:first-child {
     border-top: 1px solid $border-color-1;
   }
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    width: 324px;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    margin-bottom: 63px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 77px, $bg-second 77px, $bg-second 100%);
+    border: none;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:nth-child(2n+1) {
+      margin-right: 60px;
+    }
+
+    &:last-child {
+      justify-content: space-between;
+      min-height: 430px;
+      margin-top: 78px;
+      padding-top: 27px;
+      padding-bottom: 39px;
+      background-image: none;
+      box-shadow: 0 -1px 0 0 $border-color-2,
+        0 1px 0 0 $border-color-2;
+      border-left: 1px solid $border-color-2;
+      border-right: 1px solid $border-color-2;
+    }
+  }
 }
 
 .catalog-item__title {
@@ -22,12 +54,23 @@
 
 .catalog-item__img-link {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    min-height: 208px;
+    margin-bottom: 32px;
+  }
 }
 
 .catalog-item__card-specs {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .catalog-item__link {
@@ -37,15 +80,34 @@
   @include font-oswald(16px,20px);
   text-transform: uppercase;
   color: $link-color;
+
+  @media (min-width: 768px) {
+    width: 130px;
+    align-self: center;
+    margin-bottom: 19px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .catalog-item__specs-list {
   @include font-arial(12px,16px);
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 33px;
+  }
 }
 
 .specs-list__item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    border-bottom: 1px solid $border-color-4;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
 }
 
 .catalog-item__show-all {
@@ -66,6 +128,18 @@
     background: url("../img/icon-plus-mobile.svg") no-repeat 50% 50%;
     background-size: 30px 30px;
   }
+
+  @media (min-width: 768px) {
+    width: 140px;
+    font-size: 20px;
+
+    &::before {
+      padding: 30px;
+      margin-bottom: 50px;
+      background: url("../img/icon-plus.svg") no-repeat 50% 50%;
+      background-size: 60px 60px;
+    }
+  }
 }
 
 .catalog-item__info {
@@ -74,4 +148,11 @@
   text-align: center;
 
   @include font-arial(12px,16px);
+
+  @media (min-width: 768px) {
+    margin-bottom: 69px;
+    width: 170px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

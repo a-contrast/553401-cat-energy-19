@@ -12,16 +12,34 @@
 
   @include font-oswald(24px, 40px);
   background: $standard-color;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    margin-left: 28px;
+    padding-left: 39px;
+    padding-right: 36px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional-goods__stock {
-  height: 289px;
+  min-height: 289px;
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 60px;
   background-color: $bg-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 76px;
+    padding-top: 65px;
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
 }
 
 .additional-goods__stock-title {
@@ -39,5 +57,18 @@
     content: url("../img/icon-gift.png");
     padding: 5px;
     margin-bottom: 52px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: 500px;
+    text-align: start;
+    margin-left: 90px;
+
+    &::before {
+      padding: 0;
+      margin-bottom: 8px;
+      margin-right: 278px;
+    }
   }
 }
