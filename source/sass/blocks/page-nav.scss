@@ -12,11 +12,11 @@
     max-width: 480px;
     margin-right: 30px;
     height: auto;
-      &--close {
-        height: auto;
+
+    &--close {
+      height: auto;
     }
   }
-
 }
 
 .page-nav__item {
@@ -27,7 +27,6 @@
     padding-left: 35px;
     border: none;
   }
-
 }
 
 .page-nav__link {

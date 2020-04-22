@@ -8,10 +8,10 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+
     @include font-oswald(18px, 25px);
     font-weight: 400;
   }
-
 }
 
 .page-header__wrapper {
@@ -25,7 +25,6 @@
   @media (min-width: 768px) {
     border: none;
   }
-
 }
 
 .page-header__logo {

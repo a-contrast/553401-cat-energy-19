@@ -27,10 +27,9 @@
   counter-reset: section;
 
   @media (min-width: 768px) {
-    flex-direction: row;;
+    flex-direction: row;
     flex-wrap: wrap;
   }
-
 }
 
 .description__item {
@@ -97,12 +96,12 @@
       position: absolute;
       left: 118px;
       top: -18px;
+
       @include font-oswald(281px, 281px);
       color: $bg-second;
       z-index: -1;
     }
   }
-
 }
 
 .description__item-span {
