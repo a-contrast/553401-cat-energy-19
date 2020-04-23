@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
 
+    @include wrapper ();
     @include font-oswald(18px, 25px);
     font-weight: 400;
   }
@@ -31,6 +32,10 @@
   margin-left: 20px;
   padding-bottom: 4px;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .page-header__logo--main-page {

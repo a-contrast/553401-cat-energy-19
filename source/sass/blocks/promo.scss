@@ -2,25 +2,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   margin-bottom: 22px;
-  background: linear-gradient(to bottom, $bg-main 0%, $bg-main 62%, $standard-color 62%, $standard-color 100%);
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
+  // background: linear-gradient(to bottom, $bg-main 0%, $bg-main 62%, $standard-color 62%, $standard-color 100%);
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-size: 100%;
+  // background-repeat: no-repeat;
+  // background-position: top;
 
   @include font-oswald(36px, 36px);
   color: $promo-color;
   text-align: center;
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 306px;
+    background-color: $bg-promo;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: -2;
+  }
+
   @media (min-width: 768px) {
-    position: relative;
-    // min-height: 780px;
     margin-left: 118px;
-    background: none;
     color: $link-color;
     text-align: left;
     align-items: flex-start;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    min-height: 626px;
+    margin-bottom: 80px;
+
+    &::after {
+      display: block;
+      width: calc(50% + 95px);
+      min-height: 696px;
+      top: -70px;
+      right: 0;
+      // left: calc(50% - 95px);
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: right;
+    }
   }
 }
 
@@ -63,6 +95,11 @@
     top: 400px;
     left: 150px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 150px;
+    left: 500px;
+  }
 }
 
 .promo__button {
@@ -76,5 +113,9 @@
     font-size: 20px;
     line-height: 20px;
     padding: 16px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }

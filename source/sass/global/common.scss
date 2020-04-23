@@ -10,6 +10,10 @@
   @media (min-width: 768px) {
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .visually-hidden {
@@ -32,6 +36,10 @@
 
   @media (min-width: 768px) {
     max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
   }
 }
 

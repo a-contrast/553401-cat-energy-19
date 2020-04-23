@@ -29,6 +29,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -100,6 +101,19 @@
       @include font-oswald(281px, 281px);
       color: $bg-second;
       z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-right: 35px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
