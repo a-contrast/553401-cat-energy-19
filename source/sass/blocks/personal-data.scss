@@ -5,6 +5,12 @@
   &::after {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding: 0;
+    margin-right: 40px;
+  }
 }
 
 .personal-data__item {

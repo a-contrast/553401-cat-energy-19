@@ -16,6 +16,12 @@
     margin-left: 71px;
     margin-right: 67px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-left: 40px;
+    margin-right: 0;
+  }
 }
 
 .weight-question__label {

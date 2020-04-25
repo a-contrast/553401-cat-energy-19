@@ -6,6 +6,12 @@
   }
 }
 
+.form-contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .form-contacts__item {
   display: flex;
   align-items: center;
@@ -41,6 +47,20 @@
 
   @media (min-width: 768px) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
+    &--email {
+      width: 50%;
+      margin-right: 40px;
+    }
+
+    &--phone {
+      width: 50%;
+      margin-left: 40px;
+    }
   }
 }
 
