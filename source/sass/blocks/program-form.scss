@@ -7,7 +7,7 @@
   @include font-oswald(16px, 18px);
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -29,7 +29,7 @@
   border: none;
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 68px;
     padding-left: 71px;
     padding-right: 67px;
@@ -48,7 +48,7 @@
   @include font-oswald(24px, 24px);
   text-transform: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-left: -40px;
     margin-bottom: 61px;
     padding-left: 38px;
@@ -61,7 +61,7 @@
 .program-form__legend-span {
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: inline;
   }
 }
@@ -73,7 +73,7 @@
   margin-right: 20px;
   padding-bottom: 10px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     margin-bottom: 50px;
@@ -86,7 +86,7 @@
 .program-form__button {
   margin-bottom: 21px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: calc(50% - 30px);
     margin-bottom: 0;
     margin-right: 30px;
@@ -106,7 +106,7 @@
   text-transform: none;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-left: 30px;
     width: calc(50% - 30px);
     font-size: 16px;

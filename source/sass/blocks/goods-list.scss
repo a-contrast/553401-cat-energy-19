@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-bottom: 39px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 69px;
   }
 
@@ -17,21 +17,21 @@
 .goods-list__item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid $border-color-4;
+  border-bottom: $border-4;
   padding-top: 14px;
   padding-bottom: 17px;
 
   &:first-child {
-    border-top: 1px solid $border-color-4;
+    border-top: $border-4;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-left: 38px;
     padding-right: 37px;
     padding-top: 25px;
     padding-bottom: 27px;
-    border-left: 1px solid $border-color-4;
-    border-right: 1px solid $border-color-4;
+    border-left: $border-4;
+    border-right: $border-4;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +47,7 @@
 }
 
 .goods-list__item-wrapper {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -66,7 +66,7 @@
 
   @include font-arial(14px, 14px);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 22px;
     font-size: 16px;
     line-height: 20px;
@@ -85,7 +85,7 @@
   @include font-oswald(16px, 16px);
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -96,13 +96,13 @@
 }
 
 .goods-list__item-field {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-right: 24px;
   }
 }
 
 .goods-list__item-value {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     min-width: 70px;
     text-align: end;
   }

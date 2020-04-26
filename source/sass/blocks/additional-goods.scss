@@ -11,9 +11,9 @@
   padding-right: 20px;
 
   @include font-oswald(24px, 40px);
-  background: $standard-color;
+  background-color: $standard-color;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 20px;
     margin-left: 28px;
     padding-left: 39px;
@@ -24,7 +24,7 @@
 }
 
 .additional-goods__wrapper {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-top: 60px;
     margin-bottom: 76px;
   }
@@ -42,7 +42,7 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 65px;
     min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -72,7 +72,7 @@
     margin-bottom: 52px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     width: 500px;
     text-align: start;

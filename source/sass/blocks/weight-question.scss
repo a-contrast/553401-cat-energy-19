@@ -1,6 +1,6 @@
 .weight-question {
   display: flex;
-  border: 1px solid $bg-second;
+  border: $border-second;
   padding-top: 21px;
   padding-bottom: 8px;
   padding-left: 0;
@@ -10,7 +10,7 @@
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 25px;
     padding-bottom: 10px;
     margin-left: 71px;
@@ -29,7 +29,7 @@
   align-items: center;
   margin-bottom: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 15px;
   }
 }
@@ -45,7 +45,7 @@
   border-radius: 50%;
   box-shadow: 0 0 0 1px $bg-second;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-left: 28px;
     margin-right: 21px;
     width: 38px;

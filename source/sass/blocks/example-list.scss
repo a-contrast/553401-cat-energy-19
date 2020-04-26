@@ -12,7 +12,7 @@
   // width: 124px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-right: 42px;
   }
 }
@@ -23,13 +23,13 @@
   padding-top: 13px;
   padding-bottom: 15px;
   text-align: center;
-  border: 1px solid $border-color-4;
+  border: $border-4;
   border-radius: 3px;
 
   @include font-oswald(24px, 24px);
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 162px;
     min-height: 72px;
     font-size: 30px;
@@ -44,20 +44,20 @@
   padding: 0 5px;
   top: 47px;
   text-transform: lowercase;
-  background: $bg-second;
+  background-color: $bg-second;
 
   @include font-arial(12px, 12px);
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     max-width: 140px;
     top: 63px;
     font-size: 14px;
     line-height: 14px;
-    background: $standard-color;
+    background-color: $standard-color;
   }
 
   @media (min-width: $desktop-width) {
-    background: $bg-second;
+    background-color: $bg-second;
   }
 }

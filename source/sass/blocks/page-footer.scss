@@ -5,7 +5,7 @@
   padding-bottom: 2px;
   background-color: $bg-second;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     padding-top: 53px;
     padding-bottom: 53px;
@@ -18,7 +18,7 @@
   text-align: center;
   padding: 27px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-align: start;
     padding-top: 5px;
     padding-bottom: 0;
@@ -31,7 +31,7 @@
   min-width: 163px;
   padding: 18px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }

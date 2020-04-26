@@ -4,11 +4,6 @@
   align-items: center;
   position: relative;
   margin-bottom: 22px;
-  // background: linear-gradient(to bottom, $bg-main 0%, $bg-main 62%, $standard-color 62%, $standard-color 100%);
-  // background-image: url("../img/index-background-mobile@1x.jpg");
-  // background-size: 100%;
-  // background-repeat: no-repeat;
-  // background-position: top;
 
   @include font-oswald(36px, 36px);
   color: $promo-color;
@@ -27,8 +22,8 @@
     z-index: -2;
   }
 
-  @media (min-width: 768px) {
-    margin-left: 118px;
+  @media (min-width: $tablet-width) {
+    padding-left: 118px;
     color: $link-color;
     text-align: left;
     align-items: flex-start;
@@ -63,7 +58,7 @@
   line-height: 36px;
   font-weight: 400;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 420px;
     margin-bottom: 41px;
     color: $link-color;
@@ -78,7 +73,7 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
@@ -88,7 +83,7 @@
 .promo__image {
   margin-bottom: 2px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
     // ВРЕМЕННО
@@ -106,7 +101,7 @@
   width: calc(100% - 40px);
   font-size: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     // ВРЕМЕННО
     margin-bottom: 507px;
     width: 245px;

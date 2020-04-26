@@ -1,7 +1,7 @@
 .form-contacts {
   padding-top: 14px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 58px;
   }
 }
@@ -45,7 +45,7 @@
     background-size: 20px 20px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 
@@ -71,9 +71,9 @@
   padding-left: 15px;
   padding-right: 40px;
   outline: none;
-  border: 1px solid $bg-second;
+  border: $border-second;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     height: 52px;
     margin-left: 15px;
     padding-left: 20px;
