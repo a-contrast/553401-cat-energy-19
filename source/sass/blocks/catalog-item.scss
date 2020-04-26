@@ -21,15 +21,13 @@
     padding-right: 37px;
     padding-bottom: 40px;
     margin-bottom: 63px;
+    margin-left: 30px;
+    margin-right: 30px;
     background-image: linear-gradient(to bottom, transparent 0, transparent 77px, $bg-second 77px, $bg-second 100%);
     border: none;
 
     &:first-child {
       border-top: none;
-    }
-
-    &:nth-child(2n+1) {
-      margin-right: 30px;
     }
 
     &:last-child {
@@ -48,11 +46,8 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-right: 30px;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
