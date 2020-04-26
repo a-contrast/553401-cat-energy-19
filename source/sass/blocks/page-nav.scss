@@ -10,7 +10,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     max-width: 480px;
-    height: auto;
+    //ВРЕМЕННО, нужно сделать проверку на разрешение экрана в JS
+    height: auto !important;
 
     &--close {
       height: auto;
