@@ -2,18 +2,23 @@
   text-transform: uppercase;
   overflow: hidden;
   transition: height 0.8s ease;
+  height: 0;
 
-  &--close {
-    height: 0;
+  &--open {
+    height: 198px;
+  }
+
+  &--no-js {
+    height: auto;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     max-width: 480px;
     //ВРЕМЕННО, нужно сделать проверку на разрешение экрана в JS
-    height: auto !important;
+    height: auto;
 
-    &--close {
+    &--open {
       height: auto;
     }
   }

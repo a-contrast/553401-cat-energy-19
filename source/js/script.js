@@ -1,21 +1,30 @@
 var mobileMenu = document.querySelector(".page-nav__list");
 var mobileMenuToggle = document.querySelector(".page-header__toggle");
-var SumMenuItems = mobileMenu.getElementsByClassName("page-nav__item").length;
-var menuHeight = (SumMenuItems * 66);
-mobileMenu.style.height = menuHeight + "px";
+
+// var SumMenuItems = mobileMenu.getElementsByClassName("page-nav__item").length;
+// var menuHeight = (SumMenuItems * 66);
+// mobileMenu.style.height = menuHeight + "px";
 
 
-mobileMenuToggle.addEventListener("click", function (evt) {
+// mobileMenuToggle.addEventListener("click", function (evt) {
+//   mobileMenuToggle.classList.toggle("page-header__toggle--close");
+//   mobileMenu.classList.toggle("page-nav__list--close");
+
+//   if (document.querySelector(".page-nav__list--close")) {
+//     mobileMenu.style.height = 0;
+//     mobileMenuToggle.setAttribute('aria-label', "Открыть меню");
+//   } else {
+//     mobileMenu.style.height = menuHeight + "px";
+//     mobileMenuToggle.setAttribute('aria-label', "Закрыть меню");
+//   }
+// });
+
+mobileMenu.classList.remove("page-nav__list--no-js");
+mobileMenuToggle.classList.remove("page-header__toggle--no-js");
+
+mobileMenuToggle.addEventListener('click', function() {
   mobileMenuToggle.classList.toggle("page-header__toggle--close");
-  mobileMenu.classList.toggle("page-nav__list--close");
-
-  if (document.querySelector(".page-nav__list--close")) {
-    mobileMenu.style.height = 0;
-    mobileMenuToggle.setAttribute('aria-label', "Открыть меню");
-  } else {
-    mobileMenu.style.height = menuHeight + "px";
-    mobileMenuToggle.setAttribute('aria-label', "Закрыть меню");
-  }
+  mobileMenu.classList.toggle("page-nav__list--open");
 });
 
 if (document.querySelector(".page-index")) {
