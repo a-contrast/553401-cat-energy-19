@@ -22,9 +22,16 @@ var mobileMenuToggle = document.querySelector(".page-header__toggle");
 mobileMenu.classList.remove("page-nav__list--no-js");
 mobileMenuToggle.classList.remove("page-header__toggle--no-js");
 
-mobileMenuToggle.addEventListener('click', function() {
+mobileMenuToggle.addEventListener("click", function(evt) {
   mobileMenuToggle.classList.toggle("page-header__toggle--close");
   mobileMenu.classList.toggle("page-nav__list--open");
+
+  if (document.querySelector(".page-nav__list--open")) {
+    mobileMenuToggle.setAttribute("aria-label", "Закрыть меню");
+  } else {
+    mobileMenuToggle.setAttribute("aria-label", "Открыть меню");
+  };
+
 });
 
 if (document.querySelector(".page-index")) {
