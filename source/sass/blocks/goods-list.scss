@@ -28,7 +28,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 38px;
     padding-right: 37px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 27px;
     border-left: $border-4;
     border-right: $border-4;
@@ -61,6 +61,7 @@
 .goods-list__item-specs {
   display: flex;
   justify-content: space-between;
+  margin-top: 9px;
   margin-bottom: 15px;
   margin-left: 0;
 

@@ -1,3 +1,9 @@
+.page-nav {
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
+  }
+}
+
 .page-nav__list {
   text-transform: uppercase;
   overflow: hidden;
@@ -14,6 +20,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     max-width: 480px;
     //ВРЕМЕННО, нужно сделать проверку на разрешение экрана в JS
     height: auto;
@@ -21,6 +28,10 @@
     &--open {
       height: auto;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
   }
 }
 

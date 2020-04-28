@@ -1,17 +1,47 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @include font-oswald(20px, 20px);
   font-weight: 500;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-color: $bg-promo;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -2;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 
     @include wrapper ();
-    @include font-oswald(18px, 25px);
+    font-size: 18px;
+    line-height: 25px;
     font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 52px;
+
+    &::after {
+      width: 50%;
+      min-height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
   }
 }
 
