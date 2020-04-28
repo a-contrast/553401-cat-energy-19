@@ -6,7 +6,7 @@
   @include font-oswald(20px, 20px);
   font-weight: 500;
 
-  &::after {
+  &--main::after {
     position: absolute;
     content: "";
     top: 0;
@@ -35,9 +35,9 @@
     font-size: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 52px;
+    margin-bottom: 20px;
 
-    &::after {
+    &--main::after {
       width: 50%;
       min-height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");

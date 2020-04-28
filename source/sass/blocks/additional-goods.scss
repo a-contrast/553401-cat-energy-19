@@ -21,6 +21,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
 }
 
 .additional-goods__wrapper {
@@ -32,6 +36,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 86px;
   }
 }
 
@@ -50,8 +55,9 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding-top: 60px;
     margin-left: 80px;
-    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 }
 
