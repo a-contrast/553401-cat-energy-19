@@ -4,19 +4,38 @@
 
   @include font-oswald(20px, 20px);
   font-weight: 500;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include wrapper ();
+    @include font-oswald(18px, 25px);
+    font-weight: 400;
+  }
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 14px;
-  border-bottom: 1px solid $border-color-2;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  border-bottom: $border-2;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-header__logo {
   margin-left: 20px;
+  padding-bottom: 4px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .page-header__logo--main-page {
@@ -28,12 +47,20 @@
   height: 18px;
   margin-right: 12px;
   padding: 20px;
-  background: url("../img/icon-close.svg") no-repeat 50%;
+  background: url("../img/icon-mobile-menu.svg") no-repeat 50%;
   background-size: 24px 18px;
   border: none;
   cursor: pointer;
 
   &--close {
-    background-image: url("../img/icon-mobile-menu.svg");
+    background-image: url("../img/icon-close.svg");
+  }
+
+  &--no-js {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

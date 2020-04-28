@@ -3,23 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Подбор программы</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-form">
   <header class="page-header container">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="40"
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
           alt="Интернет-магазин «Cat Energy»">
       </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <button class="page-header__toggle page-header__toggle--no-js" aria-label="Открыть меню" type="button"></button>
     </div>
     <nav class="page-nav">
-      <ul class="page-nav__list list">
+      <ul class="page-nav__list page-nav__list--no-js list">
         <li class="page-nav__item">
           <a class="page-nav__link" href="index.html">Главная</a>
         </li>
@@ -38,66 +37,70 @@
       <h1 class="selection-program__title">Подбор программы</h1>
       <p class="selection-program__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="selection-program__form program-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="program-form__fieldset personal-data">
-          <legend class="visually-hidden">Персональные данные</legend>
-          <label class="personal-data__item">Имя:*
-            <input class="personal-data__input upper-oswald" id="name" type="text" name="name" placeholder="Барсик">
-          </label>
+        <div class="program-form__wrapper">
+          <fieldset class="program-form__fieldset personal-data">
+            <legend class="visually-hidden">Персональные данные</legend>
+            <label class="personal-data__item">Имя:*
+              <input class="personal-data__input upper-oswald" id="name" type="text" name="name" placeholder="Барсик">
+            </label>
 
-          <label class="personal-data__item">Вес (кг):*
-            <input class="personal-data__input upper-oswald" id="weight" type="number" name="weight-in-kg" placeholder="7">
-          </label>
+            <label class="personal-data__item">Вес (кг):*
+              <input class="personal-data__input upper-oswald" id="weight" type="number" name="weight-in-kg" placeholder="7">
+            </label>
 
-          <label class="personal-data__item">Возраст (лет):
-            <input class="personal-data__input upper-oswald" id="age" type="number" name="age" placeholder="7">
-          </label>
+            <label class="personal-data__item">Возраст (лет):
+              <input class="personal-data__input upper-oswald" id="age" type="number" name="age" placeholder="7">
+            </label>
 
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="program-form__fieldset weight-question">
-          <legend class="visually-hidden">Выбор нужной программы</legend>
+          <fieldset class="program-form__fieldset weight-question">
+            <legend class="visually-hidden">Выбор нужной программы</legend>
 
-          <label class="weight-question__label">
-            <input class="weight-question__input visually-hidden" id="weight-down" type="radio" name="weight" value="weight-down" checked>
-            <span class="weight-question__radio-box"></span>
-            Похудение
-          </label>
+            <label class="weight-question__label">
+              <input class="weight-question__input visually-hidden" id="weight-down" type="radio" name="weight" value="weight-down" checked>
+              <span class="weight-question__radio-box"></span>
+              Похудение
+            </label>
 
-          <label class="weight-question__label">
-            <input class="weight-question__input visually-hidden" id="weight-up" type="radio" name="weight" value="weight-up">
-            <span class="weight-question__radio-box"></span>
-            Набор массы
-          </label>
+            <label class="weight-question__label">
+              <input class="weight-question__input visually-hidden" id="weight-up" type="radio" name="weight" value="weight-up">
+              <span class="weight-question__radio-box"></span>
+              Набор массы
+            </label>
 
-          <label class="weight-question__label">
-            <input class="weight-question__input visually-hidden" id="weight-unknown" type="radio" name="weight" value="unknown">
-            <span class="weight-question__radio-box"></span>
-            Не знаю (нужен ваш совет)
-          </label>
+            <label class="weight-question__label">
+              <input class="weight-question__input visually-hidden" id="weight-unknown" type="radio" name="weight" value="unknown">
+              <span class="weight-question__radio-box"></span>
+              Не знаю (нужен ваш совет)
+            </label>
 
-        </fieldset>
+          </fieldset>
+        </div>
 
         <fieldset class="program-form__fieldset form-contacts">
-          <legend class="program-form__legend">Контактные данные <span class="program-form__legend-span">(владельца кота)</span></legend>
-          <label class="form-contacts__item form-contacts__item--email">E-mail:*
-            <input class="form-contacts__input upper-oswald" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
-          </label>
+          <legend class="program-form__legend title-after">Контактные данные <span class="program-form__legend-span">(владельца кота)</span></legend>
+          <div class="form-contacts__wrapper">
+            <label class="form-contacts__item form-contacts__item--email">E-mail:*
+              <input class="form-contacts__input upper-oswald" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </label>
 
-          <label class="form-contacts__item form-contacts__item--phone">Телефон:*
-            <input class="form-contacts__input upper-oswald" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
+            <label class="form-contacts__item form-contacts__item--phone">Телефон:*
+              <input class="form-contacts__input upper-oswald" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
 
         </fieldset>
 
         <fieldset class="program-form__fieldset form-comment">
-          <legend class="program-form__legend">Комментарий</legend>
+          <legend class="program-form__legend title-after">Комментарий</legend>
           <div class="form-comment__container">
             <label class="visually-hidden" for="comment">Расскажите про кота</label>
             <textarea class="form-comment__textarea upper-oswald" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="program-form__fieldset form-additional">
-          <legend class="program-form__legend">Дополнительно</legend>
+          <legend class="program-form__legend form-additional__legend title-after">Дополнительно</legend>
           <div class="form-additional__container">
             <label class="form-additional__label">
               <input class="form-additional__input visually-hidden" id="sugar" type="checkbox" name="sugar" checked>
@@ -132,7 +135,9 @@
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts__wrapper contacts__wrapper--bg-color wrapper">
         <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+      </div>
+      <div class="contacts__map">
       </div>
     </section>
   </main>
@@ -161,8 +166,10 @@
     </ul>
     <div class="page-footer__copyright">
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="page-footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

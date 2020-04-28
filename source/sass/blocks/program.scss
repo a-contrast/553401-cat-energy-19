@@ -1,56 +1,166 @@
-.program {
+.program__list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .program__item {
+  flex-grow: 1;
+
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: $bg-second;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+    padding-bottom: 62px;
+    padding-left: 54px;
+    padding-right: 54px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 40px);
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.program__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    &--slim {
+      max-width: 380px;
+    }
+
+    &--pro {
+      max-width: 340px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
 }
 
 .program__title {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  position: relative;
   margin: 0;
-  padding: 4px 0;
+  margin-left: 70px;
+  padding: 10px 0;
 
   @include font-oswald(24px, 37px);
   text-transform: uppercase;
-
-  // В данном месте, наверно, правильно было бы вставить иконки абсолютом,
-  // либо круг нарисовать и вставить только иконки кошек т.к. выравнивание
-  // должно идти по зеленому кругу, в общем, подумать
+  z-index: 1;
 
   &::before {
     content: "";
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    // display: flex;
+    // justify-content: center;
     margin-right: 20px;
-    width: 50px;
-    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: -1;
   }
 
   &--slim::before {
-    content: url("../img/icon-cat-slim.png");
+    top: 0;
+    left: -68px;
+    background-image: url("../img/icon-cat-slim.png");
+    width: 50px;
+    height: 56px;
   }
 
   &--pro::before {
-    content: url("../img/icon-cat-pro.png");
+    top: 4px;
+    left: -77px;
+    background-image: url("../img/icon-cat-pro.png");
+    width: 67px;
+    height: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 0;
+    padding-top: 17px;
+
+    &--slim::before {
+      top: 21px;
+      left: 393px;
+      right: 20px;
+      width: 200px;
+      height: 212px;
+    }
+
+    &--pro::before {
+      top: 32px;
+      left: 359px;
+      right: 20px;
+      width: 268px;
+      height: 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 150px;
+
+    &--slim::before {
+      top: -20px;
+      left: -150px;
+      width: 100px;
+      height: 106px;
+    }
+
+    &--pro::before {
+      top: -15px;
+      left: -165px;
+      width: 134px;
+      height: 100px;
+    }
   }
 }
 
 .program__description {
   margin-top: 0;
   margin-bottom: 20px;
-  padding-top: 18px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 21px;
 
   @include font-arial(14px, 18px);
-  border-bottom: 1px solid $border-color-3;
+  border-bottom: $border-3;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 0;
+    margin-bottom: 41px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }
 
 .program__button {
@@ -76,10 +186,21 @@
   }
 
   &:hover::after {
-    transform: translateX(-1px);
+    transform: translateX(-3px);
   }
 
   &:focus::after {
-    transform: translateX(-1px);
+    transform: translateX(-3px);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 21px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      top: 8px;
+      right: -37px;
+    }
   }
 }

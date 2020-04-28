@@ -1,15 +1,37 @@
 .page-nav__list {
   text-transform: uppercase;
   overflow: hidden;
+  transition: height 0.8s ease;
+  height: 0;
 
-  &--close {
-    height: 0;
+  &--open {
+    height: 198px;
+  }
+
+  &--no-js {
+    height: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-width: 480px;
+    //ВРЕМЕННО, нужно сделать проверку на разрешение экрана в JS
+    height: auto;
+
+    &--open {
+      height: auto;
+    }
   }
 }
 
 .page-nav__item {
   text-align: center;
-  border-bottom: 1px solid $border-color-2;
+  border-bottom: $border-2;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    border: none;
+  }
 }
 
 .page-nav__link {
@@ -18,4 +40,10 @@
   color: $link-color;
   padding-bottom: 23px;
   padding-top: 22px;
+}
+
+.page-index .page-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $standard-color;
+  }
 }

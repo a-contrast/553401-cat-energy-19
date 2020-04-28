@@ -6,41 +6,64 @@
 
   @include font-oswald(16px, 18px);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.program-form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
 }
 
 .program-form__fieldset {
   position: relative;
-  padding: 0;
+  padding: 0 20px;
+  // padding: 0;
   margin: 0;
   border: none;
   margin-bottom: 20px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    background: #68b738;
-    width: 100%;
-    height: 3px;
-    top: 22px;
-    right: 0;
-    z-index: -1;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+    padding-left: 71px;
+    padding-right: 67px;
   }
 }
 
 .program-form__legend {
   display: inline-block;
+  margin-left: -20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 8px;
-  padding-bottom: 20px;
-  background: white;
+  margin-bottom: 20px;
+  background-color: $standard-color;
 
   @include font-oswald(24px, 24px);
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -40px;
+    margin-bottom: 61px;
+    padding-left: 38px;
+    padding-right: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program-form__legend-span {
-  display: inherit;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .program-form__submit {
@@ -49,14 +72,50 @@
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 71px;
+    margin-right: 67px;
+    padding-bottom: 0;
+  }
 }
 
 .program-form__button {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 30px);
+    margin-bottom: 0;
+    margin-right: 30px;
+    min-height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 40px);
+    margin-right: 40px;
+  }
 }
 
 .program-form__explanation {
   @include font-arial(14px, 16px);
   text-transform: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    width: calc(50% - 30px);
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 40px);
+    margin-left: 40px;
+  }
 }

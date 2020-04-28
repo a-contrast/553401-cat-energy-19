@@ -6,6 +6,14 @@
 
 .wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .visually-hidden {
@@ -23,8 +31,16 @@
 }
 
 .container {
-  max-width: 320px;
   margin: 0 auto;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+  }
 }
 
 .button-main {
@@ -48,6 +64,28 @@
   @include font-oswald(16px,18px);
   text-transform: uppercase;
   color: $input-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.title-after {
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 100%;
+    height: 3px;
+    top: 22px;
+    right: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 29px;
+    }
+  }
 }
 
 .opacity {

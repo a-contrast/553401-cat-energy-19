@@ -3,23 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-catalog">
   <header class="page-header container">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="40"
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
           alt="Интернет-магазин «Cat Energy»">
       </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <button class="page-header__toggle page-header__toggle--no-js" aria-label="Открыть меню" type="button"></button>
     </div>
     <nav class="page-nav">
-      <ul class="page-nav__list list">
+      <ul class="page-nav__list page-nav__list--no-js list">
         <li class="page-nav__item">
           <a class="page-nav__link" href="index.html">Главная</a>
         </li>
@@ -234,49 +233,59 @@
     </section>
 
     <section class="additional-goods">
-      <h2 class="additional-goods__title">Дополнительные товары</h2>
-      <dl class="additional-goods__list goods-list wrapper">
+      <h2 class="additional-goods__title title-after">Дополнительные товары</h2>
+      <div class="additional-goods__wrapper wrapper">
+        <ul class="additional-goods__list goods-list list">
 
-        <div class="goods-list__item">
-          <dt class="goods-list__item-title">Сахарозаменитель</dt>
-          <dd class="goods-list__item-specs">
-            <span class="goods-list__item-field">1 упаковка (100 г)</span>
-            <span class="goods-list__item-value">200 Р.</span>
-          </dd>
-          <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
+          <li class="goods-list__item">
+            <div class="goods-list__item-wrapper">
+              <span class="goods-list__item-title">Сахарозаменитель</span>
+              <div class="goods-list__item-specs">
+                <span class="goods-list__item-field">1 упаковка (100 г)</span>
+                <span class="goods-list__item-value">200 Р.</span>
+              </div>
+            </div>
+            <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
+          </li>
+
+          <li class="goods-list__item">
+            <div class="goods-list__item-wrapper">
+              <span class="goods-list__item-title">Питьевая вода</span>
+              <div class="goods-list__item-specs">
+                <span class="goods-list__item-field">5 литров</span>
+                <span class="goods-list__item-value">50 Р.</span>
+              </div>
+            </div>
+            <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
+          </li>
+
+          <li class="goods-list__item">
+            <div class="goods-list__item-wrapper">
+              <span class="goods-list__item-title">Молоко</span>
+              <div class="goods-list__item-specs">
+                <span class="goods-list__item-field">1 литр</span>
+                <span class="goods-list__item-value">100 Р.</span>
+              </div>
+            </div>
+            <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
+          </li>
+
+          <li class="goods-list__item">
+            <div class="goods-list__item-wrapper">
+              <span class="goods-list__item-title">Витамины</span>
+              <div class="goods-list__item-specs">
+                <span class="goods-list__item-field">1 упаковка (30 г)</span>
+                <span class="goods-list__item-value">300 Р.</span>
+              </div>
+            </div>
+            <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
+          </li>
+        </ul>
+
+        <div class="additional-goods__stock">
+          <h2 class="visually-hidden">Акция</h2>
+          <span class="additional-goods__stock-title">Закажите все <br> и получите чехол для кота в подарок!</span>
         </div>
-
-        <div class="goods-list__item">
-          <dt class="goods-list__item-title">Питьевая вода</dt>
-          <dd class="goods-list__item-specs">
-            <span class="goods-list__item-field">5 литров</span>
-            <span class="goods-list__item-value">50 Р.</span>
-          </dd>
-          <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
-        </div>
-
-        <div class="goods-list__item">
-          <dt class="goods-list__item-title">Молоко</dt>
-          <dd class="goods-list__item-specs">
-            <span class="goods-list__item-field">1 литр</span>
-            <span class="goods-list__item-value">100 Р.</span>
-          </dd>
-          <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
-        </div>
-
-        <div class="goods-list__item">
-          <dt class="goods-list__item-title">Витамины</dt>
-          <dd class="goods-list__item-specs">
-            <span class="goods-list__item-field">1 упаковка (30 г)</span>
-            <span class="goods-list__item-value">300 Р.</span>
-          </dd>
-          <a class="goods-list__button-buy button-main" href="buy.html">Заказать</a>
-        </div>
-      </dl>
-
-      <div class="additional-goods__stock">
-        <h2 class="visually-hidden">Акция</h2>
-        <span class="additional-goods__stock-title">Закажите все <br> и получите чехол для кота в подарок!</span>
       </div>
 
     </section>
@@ -285,7 +294,9 @@
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts__wrapper contacts__wrapper--bg-color wrapper">
         <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+      </div>
+      <div class="contacts__map">
       </div>
     </section>
   </main>
@@ -314,8 +325,10 @@
     </ul>
     <div class="page-footer__copyright">
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="page-footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

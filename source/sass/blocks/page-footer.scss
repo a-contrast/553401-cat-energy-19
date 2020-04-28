@@ -1,15 +1,39 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  padding-top: 28px;
-  padding-bottom: 30px;
+  padding-top: 12px;
+  padding-bottom: 2px;
   background-color: $bg-second;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
 }
 
 .page-footer__logo-title {
   align-self: center;
-  margin-bottom: 17px;
-  padding: 10px;
+  min-width: 163px;
+  text-align: center;
+  padding: 27px 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  min-width: 163px;
+  padding: 18px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__copyright-link {
@@ -19,15 +43,16 @@
   @include font-arial(16px, 16px);
   color: $copyright-color;
   position: relative;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -6px;
-    right: -173px;
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-  }
+// ВРЕМЕННО
+.page-footer__copyright-icon {
+  display: inline-block;
+  width: 41px;
+  height: 40px;
+  margin-left: auto;
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 7px 0;
 }

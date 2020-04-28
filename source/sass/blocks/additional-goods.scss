@@ -1,17 +1,6 @@
 .additional-goods {
   position: relative;
   margin-bottom: 35px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background: #68b738;
-    width: 100%;
-    height: 3px;
-    top: 22px;
-    right: 0;
-    z-index: -1;
-  }
 }
 
 .additional-goods__title {
@@ -22,17 +11,48 @@
   padding-right: 20px;
 
   @include font-oswald(24px, 40px);
-  background: $standard-color;
+  background-color: $standard-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    margin-left: 28px;
+    padding-left: 39px;
+    padding-right: 36px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.additional-goods__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additional-goods__stock {
-  height: 289px;
-  margin-left: 20px;
-  margin-right: 20px;
+  min-height: 289px;
   padding-top: 60px;
   background-color: $bg-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-left: 80px;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+  }
 }
 
 .additional-goods__stock-title {
@@ -50,5 +70,31 @@
     content: url("../img/icon-gift.png");
     padding: 5px;
     margin-bottom: 52px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 500px;
+    text-align: start;
+    margin-left: 90px;
+
+    &::before {
+      padding: 0;
+      margin-bottom: 8px;
+      margin-right: 278px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 165px;
+    text-align: center;
+
+    &::before {
+      padding: 5px;
+      margin-bottom: 52px;
+      margin-right: 0;
+    }
   }
 }

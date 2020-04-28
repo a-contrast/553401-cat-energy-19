@@ -2,11 +2,32 @@
   padding-top: 17px;
   padding-bottom: 11px;
   background-color: $bg-second;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 50px;
+    border-top: $border-2;
+    background: linear-gradient(to top, $bg-second 0, $bg-second 462px, $standard-color 462px, $standard-color 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wrapper ();
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: none;
+  }
 }
 
 .example__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    width: 545px;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .example__title {
@@ -14,6 +35,12 @@
   margin-bottom: 10px;
 
   @include font-oswald(36px, 60px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -22,6 +49,32 @@
 
   @include font-arial(14px, 18px);
   letter-spacing: 0.01px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 680px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.example__list-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    // ВРЕМЕННО
+    margin-bottom: 328px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
 }
 
 .example__total {
@@ -31,13 +84,46 @@
 
   @include font-oswald(14px, 20px);
   text-transform: uppercase;
-  align-self: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.example__total-span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 50px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktop-width) {
+    width: 616px;
+    padding-left: 50px;
+  }
 }
 
 .example__image-container {
   display: flex;
   width: 320px;
   height: 240px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 7px;
   overflow: hidden;
 }
@@ -56,9 +142,19 @@
   align-items: center;
   margin: 0 auto;
   padding-left: 2px;
-  width: 220px;
+  // width: 220px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .example__progress-bar {
@@ -68,8 +164,16 @@
   margin: 0 13px;
   padding: 3px 5px;
   background-color: $standard-color;
-  border: 1px solid $border-color-4;
+  border: $border-4;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 6px;
+    padding: 0;
+    margin: 0 20px;
+    border: 3px solid $border-color-5;
+  }
 }
 
 .example__range-button {
@@ -78,7 +182,7 @@
 
   @include font-oswald(16px, 20px);
   text-transform: uppercase;
-  background-color: $bg-second;
+  background-color: $transparent;
   border: none;
 
   &--before {
@@ -87,6 +191,21 @@
 
   &--after {
     text-align: start;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 5px 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--before {
+      text-align: start;
+    }
+
+    &--after {
+      text-align: end;
+    }
   }
 }
 
@@ -100,5 +219,22 @@
 
   &--right {
     transform: translateX(37px);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    top: -17px;
+    left: -12px;
+    background-color: $bg-main;
+    border: 12px solid $standard-color;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px $bg-second,
+      0 3px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: transform 1.5s ease;
+
+    &--right {
+      transform: translateX(416px);
+    }
   }
 }

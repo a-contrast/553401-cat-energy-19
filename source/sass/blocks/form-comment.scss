@@ -1,7 +1,10 @@
 
 .form-comment {
   padding-top: 15px;
-  // margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .form-comment__textarea {
@@ -9,11 +12,16 @@
   height: 150px;
   padding: 13px;
   resize: none;
-  border: 1px solid $bg-second;
+  border: $border-second;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    padding: 14px 18px;
+  }
 }
 
 .form-comment__container {
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 }

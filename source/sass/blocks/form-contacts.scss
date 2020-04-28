@@ -1,21 +1,27 @@
 .form-contacts {
   padding-top: 14px;
-  // margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.form-contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .form-contacts__item {
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  // НАДО БЫ ПОПРОБОВАТЬ after СДЕЛАТЬ content-ом, а не background-ом
 
   &::after {
     content: "";
@@ -26,7 +32,7 @@
   &--email::after {
     width: 17px;
     height: 13px;
-    right: 35px;
+    right: 16px;
     background-image: url("../img/icon-mail.svg");
     background-size: 17px 13px;
   }
@@ -34,9 +40,27 @@
   &--phone::after {
     width: 20px;
     height: 20px;
-    right: 32px;
+    right: 13px;
     background-image: url("../img/icon-phone.svg");
     background-size: 20px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
+    &--email {
+      width: 50%;
+      margin-right: 40px;
+    }
+
+    &--phone {
+      width: 50%;
+      margin-left: 40px;
+    }
   }
 }
 
@@ -47,5 +71,11 @@
   padding-left: 15px;
   padding-right: 40px;
   outline: none;
-  border: 2px solid $bg-second;
+  border: $border-second;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    margin-left: 15px;
+    padding-left: 20px;
+  }
 }
