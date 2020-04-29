@@ -28,7 +28,7 @@
     align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     font-size: 18px;
     line-height: 25px;
@@ -58,7 +58,15 @@
   border-bottom: $border-2;
 
   @media (min-width: $tablet-width) {
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 0px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-top: 5px;
+    // padding-bottom: 0px;
   }
 }
 
@@ -74,6 +82,17 @@
 
 .page-header__logo--main-page {
   cursor: auto;
+}
+
+.page-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 59px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 203px;
+    height: 60px;
+  }
 }
 
 .page-header__toggle {
