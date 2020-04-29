@@ -5,8 +5,8 @@
 .form-contacts__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    padding-left: 113px;
-    padding-right: 110px;
+
+    @include wrapper-form ();
   }
 }
 

@@ -30,10 +30,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 113px;
-    padding-right: 110px;
     margin-right: -40px;
     margin-left: -40px;
+
+    @include wrapper-form ();
   }
 }
 

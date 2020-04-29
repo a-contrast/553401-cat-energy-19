@@ -25,7 +25,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 112px;
+    left: 12px;
     padding-right: 44px;
     padding-left: 35px;
 
@@ -93,5 +93,6 @@
   @media (min-width: $desktop-width) {
     min-height: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
+    background-size: cover;
   }
 }
