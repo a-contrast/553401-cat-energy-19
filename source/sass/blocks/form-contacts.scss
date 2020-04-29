@@ -1,14 +1,12 @@
 .form-contacts {
   padding-top: 14px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
-  }
 }
 
 .form-contacts__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-left: 113px;
+    padding-right: 110px;
   }
 }
 
@@ -55,11 +53,19 @@
     &--email {
       width: 50%;
       margin-right: 40px;
+
+      &::after {
+        right: 22px;
+      }
     }
 
     &--phone {
       width: 50%;
       margin-left: 40px;
+
+      &::after {
+        right: 18px;
+      }
     }
   }
 }

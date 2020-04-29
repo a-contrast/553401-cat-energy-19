@@ -31,9 +31,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 32px;
+    padding-top: 34px;
     padding-left: 190px;
-    min-height: 505px;
+    min-height: 507px;
     margin-bottom: 80px;
   }
 }
@@ -90,7 +90,7 @@
 }
 
 .promo__button {
-  width: calc(100% - 40px);
+  width: 100%;
   font-size: 14px;
 
   @media (min-width: $tablet-width) {

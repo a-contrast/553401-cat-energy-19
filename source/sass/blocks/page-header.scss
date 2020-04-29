@@ -17,6 +17,11 @@
     z-index: -2;
   }
 
+  @media (max-width: $tablet-width - 1px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -25,7 +30,6 @@
     padding-bottom: 20px;
     margin-bottom: 30px;
 
-    @include wrapper ();
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
@@ -35,7 +39,7 @@
     font-size: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     &--main::after {
       width: 50%;

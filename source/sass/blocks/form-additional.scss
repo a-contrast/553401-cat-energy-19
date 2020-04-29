@@ -3,13 +3,13 @@
   padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
+    margin-bottom: 6px;
     padding-bottom: 2px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   padding-right: 0;
-  // }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .form-additional__legend {
@@ -30,6 +30,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 113px;
+    padding-right: 110px;
     margin-right: -40px;
     margin-left: -40px;
   }

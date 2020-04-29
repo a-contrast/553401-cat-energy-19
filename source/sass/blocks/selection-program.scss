@@ -1,13 +1,11 @@
 .selection-program__title {
   margin: 15px 0;
-  padding: 0 20px;
 
   @include font-oswald(36px, 60px);
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 46px;
-    padding: 0 30px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -16,19 +14,23 @@
 .selection-program__description {
   width: 300px;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @include font-oswald(14px, 18px);
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
-    margin-left: 50px;
-    width: 370px;
+    margin-bottom: 38px;
+    margin-left: 40px;
+    width: 440px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 44px;
+    width: 550px;
   }
 }
