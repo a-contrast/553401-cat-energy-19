@@ -60,13 +60,8 @@
   @media (min-width: $tablet-width) {
     align-items: center;
     padding-top: 3px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     border: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    // padding-top: 5px;
-    // padding-bottom: 0px;
   }
 }
 
@@ -89,6 +84,7 @@
     width: 174px;
     height: 59px;
   }
+
   @media (min-width: $desktop-width) {
     width: 203px;
     height: 60px;
