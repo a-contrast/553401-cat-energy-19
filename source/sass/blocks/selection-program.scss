@@ -31,6 +31,6 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-bottom: 44px;
-    width: 400px;
+    width: 380px + $wrapper-desk-left +$wrapper-desk-right;
   }
 }

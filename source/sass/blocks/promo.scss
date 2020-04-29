@@ -32,7 +32,8 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 34px;
-    padding-left: 90px;
+    // padding-left: 90px;
+    padding-left: $wrapper-desk-left + 80px;
     min-height: 507px;
     margin-bottom: 80px;
   }

@@ -12,9 +12,9 @@
   line-height: $line-height;
 }
 
-@mixin wrapper-form () {
-  // padding-left: 113px;
-  // padding-right: 110px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+// @mixin wrapper-form () {
+//   // padding-left: 113px;
+//   // padding-right: 110px;
+//   padding-left: $wrapper-desk-left;
+//   padding-right: $wrapper-desk-right;
+// }

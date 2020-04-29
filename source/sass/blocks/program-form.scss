@@ -20,8 +20,8 @@
 .program-form__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-
-    @include wrapper-form ();
+    padding-left: $wrapper-desk-left;
+    padding-right: $wrapper-desk-right;
   }
 }
 
@@ -87,8 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // margin-left: 73px;
-    margin-left: -30px;
+    margin-left: $wrapper-desk-left - 38px;
   }
 }
 
@@ -118,8 +117,8 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-right: 0;
-
-    @include wrapper-form ();
+    padding-left: $wrapper-desk-left;
+    padding-right: $wrapper-desk-right;
   }
 }
 

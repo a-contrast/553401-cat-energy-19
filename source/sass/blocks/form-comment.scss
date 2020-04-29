@@ -20,6 +20,7 @@
   display: flex;
 
   @media (min-width: $desktop-width) {
-    @include wrapper-form ();
+    padding-left: $wrapper-desk-left;
+    padding-right: $wrapper-desk-right;
   }
 }
