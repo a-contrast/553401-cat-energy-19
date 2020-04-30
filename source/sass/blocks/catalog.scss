@@ -2,11 +2,18 @@
   padding-top: 15px;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 50px;
-    margin-bottom: 4px;
+  @media (max-width: $tablet-width - 1px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    @include wrapper ();
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -23,6 +30,10 @@
     line-height: 60px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 

@@ -16,16 +16,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 71px;
-    padding-right: 71px;
+    // padding-left: 71px;
+    // padding-right: 71px;
     padding-top: 65px;
     padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 100px;
-    left: 80px;
+    top: 95px;
+    // left: 110px;
+    left: $wrapper-desk-left;
+    padding-right: 44px;
+    padding-left: 35px;
 
     &--bg-color {
       background-color: $standard-color;
@@ -41,8 +44,13 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
+    margin-left: 41px;
     font-size: 20px;
     line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 88px;
   }
 }
 
@@ -52,8 +60,13 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
+    margin-right: 41px;
     text-align: end;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
@@ -81,5 +94,6 @@
   @media (min-width: $desktop-width) {
     min-height: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
+    background-size: cover;
   }
 }

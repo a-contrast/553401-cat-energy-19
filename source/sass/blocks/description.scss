@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
+  }
 }
 
 .description__title {

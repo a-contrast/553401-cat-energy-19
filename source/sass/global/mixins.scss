@@ -12,17 +12,9 @@
   line-height: $line-height;
 }
 
-@mixin wrapper () {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
+// @mixin wrapper-form () {
+//   // padding-left: 113px;
+//   // padding-right: 110px;
+//   padding-left: $wrapper-desk-left;
+//   padding-right: $wrapper-desk-right;
+// }

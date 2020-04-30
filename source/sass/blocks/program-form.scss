@@ -11,28 +11,56 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .program-form__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    padding-left: 71px;
-    padding-right: 67px;
+    padding-left: $wrapper-desk-left;
+    padding-right: $wrapper-desk-right;
   }
 }
 
 .program-form__fieldset {
   position: relative;
-  padding: 0 20px;
-  // padding: 0;
   margin: 0;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 50px;
     padding-left: 71px;
     padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.program-form__fieldset-wrapper {
+  @media (max-width: $tablet-width - 1px) {
+    padding: 12px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-left: 40px;
+    margin-right: 0;
+    margin-bottom: 70px;
+    padding: 0;
   }
 }
 
@@ -53,8 +81,13 @@
     margin-bottom: 61px;
     padding-left: 38px;
     padding-right: 40px;
+    padding-top: 0;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: $wrapper-desk-left - 38px;
   }
 }
 
@@ -69,17 +102,23 @@
 .program-form__submit {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 12px;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     margin-bottom: 50px;
-    margin-left: 71px;
-    margin-right: 67px;
+    padding-left: 71px;
+    padding-right: 67px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: $wrapper-desk-left;
+    padding-right: $wrapper-desk-right;
   }
 }
 

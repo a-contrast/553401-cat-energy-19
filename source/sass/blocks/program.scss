@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 43px;
   }
 }
 
@@ -24,10 +25,7 @@
   background-color: $bg-second;
 
   @media (min-width: $tablet-width) {
-    padding-top: 59px;
-    padding-bottom: 62px;
-    padding-left: 54px;
-    padding-right: 54px;
+    padding: 59px 54px;
     margin-bottom: 30px;
   }
 
@@ -127,18 +125,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 150px;
+    margin-left: 160px;
+    margin-bottom: 50px;
 
     &--slim::before {
-      top: -20px;
-      left: -150px;
+      top: -18px;
+      left: -160px;
       width: 100px;
       height: 106px;
     }
 
     &--pro::before {
-      top: -15px;
-      left: -165px;
+      top: -12px;
+      left: -178px;
       width: 134px;
       height: 100px;
     }
@@ -160,6 +159,10 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
   }
 }
 

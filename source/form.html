@@ -5,15 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Подбор программы</title>
+  <!-- <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script> -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-form">
-  <header class="page-header container">
+  <header class="page-header wrapper container">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
-          alt="Интернет-магазин «Cat Energy»">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+            alt="Интернет-магазин «Cat Energy»">
+        </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--no-js" aria-label="Открыть меню" type="button"></button>
     </div>
@@ -34,11 +43,11 @@
   <main class="page-main container">
 
     <section class="selection-program">
-      <h1 class="selection-program__title">Подбор программы</h1>
-      <p class="selection-program__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <h1 class="selection-program__title wrapper">Подбор программы</h1>
+      <p class="selection-program__description wrapper">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="selection-program__form program-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="program-form__wrapper">
-          <fieldset class="program-form__fieldset personal-data">
+          <fieldset class="program-form__fieldset personal-data fieldset wrapper">
             <legend class="visually-hidden">Персональные данные</legend>
             <label class="personal-data__item">Имя:*
               <input class="personal-data__input upper-oswald" id="name" type="text" name="name" placeholder="Барсик">
@@ -54,31 +63,33 @@
 
           </fieldset>
 
-          <fieldset class="program-form__fieldset weight-question">
-            <legend class="visually-hidden">Выбор нужной программы</legend>
+          <div class="program-form__fieldset-wrapper wrapper">
+            <fieldset class="program-form__fieldset weight-question">
+              <legend class="visually-hidden">Выбор нужной программы</legend>
 
-            <label class="weight-question__label">
-              <input class="weight-question__input visually-hidden" id="weight-down" type="radio" name="weight" value="weight-down" checked>
-              <span class="weight-question__radio-box"></span>
-              Похудение
-            </label>
+              <label class="weight-question__label">
+                <input class="weight-question__input visually-hidden" id="weight-down" type="radio" name="weight" value="weight-down" checked>
+                <span class="weight-question__radio-box"></span>
+                Похудение
+              </label>
 
-            <label class="weight-question__label">
-              <input class="weight-question__input visually-hidden" id="weight-up" type="radio" name="weight" value="weight-up">
-              <span class="weight-question__radio-box"></span>
-              Набор массы
-            </label>
+              <label class="weight-question__label">
+                <input class="weight-question__input visually-hidden" id="weight-up" type="radio" name="weight" value="weight-up">
+                <span class="weight-question__radio-box"></span>
+                Набор массы
+              </label>
 
-            <label class="weight-question__label">
-              <input class="weight-question__input visually-hidden" id="weight-unknown" type="radio" name="weight" value="unknown">
-              <span class="weight-question__radio-box"></span>
-              Не знаю (нужен ваш совет)
-            </label>
+              <label class="weight-question__label">
+                <input class="weight-question__input visually-hidden" id="weight-unknown" type="radio" name="weight" value="unknown">
+                <span class="weight-question__radio-box"></span>
+                Не знаю (нужен ваш совет)
+              </label>
 
-          </fieldset>
+            </fieldset>
+          </div>
         </div>
 
-        <fieldset class="program-form__fieldset form-contacts">
+        <fieldset class="program-form__fieldset form-contacts wrapper">
           <legend class="program-form__legend title-after">Контактные данные <span class="program-form__legend-span">(владельца кота)</span></legend>
           <div class="form-contacts__wrapper">
             <label class="form-contacts__item form-contacts__item--email">E-mail:*
@@ -92,14 +103,14 @@
 
         </fieldset>
 
-        <fieldset class="program-form__fieldset form-comment">
+        <fieldset class="program-form__fieldset form-comment wrapper">
           <legend class="program-form__legend title-after">Комментарий</legend>
           <div class="form-comment__container">
             <label class="visually-hidden" for="comment">Расскажите про кота</label>
             <textarea class="form-comment__textarea upper-oswald" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="program-form__fieldset form-additional">
+        <fieldset class="program-form__fieldset form-additional wrapper">
           <legend class="program-form__legend form-additional__legend title-after">Дополнительно</legend>
           <div class="form-additional__container">
             <label class="form-additional__label">
@@ -124,7 +135,7 @@
             </label>
           </div>
         </fieldset>
-        <div class="program-form__submit">
+        <div class="program-form__submit wrapper">
           <button class="program-form__button button-main" type="submit">Отправить заявку</button>
           <span class="program-form__explanation">* &mdash; Обязательные поля</span>
         </div>
