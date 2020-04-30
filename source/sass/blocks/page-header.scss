@@ -37,9 +37,9 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 18px;
+    padding-top: 51px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 
     &--main::after {
       width: 50%;

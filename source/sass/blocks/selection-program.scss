@@ -1,3 +1,9 @@
+.selection-program {
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+}
+
 .selection-program__title {
   margin: 15px 0;
 
@@ -30,7 +36,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-bottom: 44px;
+    margin-bottom: 46px;
     width: 380px + $wrapper-desk-left +$wrapper-desk-right;
   }
 }
