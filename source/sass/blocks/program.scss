@@ -3,14 +3,14 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 43px;
+    margin-bottom: 42px;
   }
 }
 
@@ -25,7 +25,8 @@
   background-color: $bg-second;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 54px;
+    // min-height: 372px;
+    padding: 60px 54px;
     margin-bottom: 30px;
   }
 
@@ -105,7 +106,7 @@
     font-size: 36px;
     line-height: 37px;
     margin-left: 0;
-    padding-top: 17px;
+    padding-top: 16px;
 
     &--slim::before {
       top: 21px;
@@ -169,6 +170,7 @@
 .program__button {
   position: relative;
   padding-right: 12px;
+  padding-bottom: 3px;
 
   @include font-oswald(16px, 16px);
   text-transform: uppercase;
@@ -176,12 +178,21 @@
   background-color: $bg-second;
   z-index: 1;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    right: -3px;
+    background-color: $bg-second;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    right: -35px;
     width: 34px;
-    height: 15px;
+    height: 16px;
+    right: -36px;
     background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
     transform: translateX(-11px);
     transition: transform 0.5s ease;
@@ -201,9 +212,14 @@
     font-size: 20px;
     line-height: 20px;
 
+    &::before {
+      width: 23px;
+      height: 20px;
+    }
+
     &::after {
-      top: 8px;
-      right: -37px;
+      height: 20px;
+      right: -38px;
     }
   }
 }
