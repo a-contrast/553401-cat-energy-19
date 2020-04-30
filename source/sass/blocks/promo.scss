@@ -25,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 118px;
+    margin-bottom: 0;
     color: $link-color;
     text-align: left;
     align-items: flex-start;
@@ -54,6 +55,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    // order: 1;
+  }
 }
 
 .promo__span {
@@ -63,30 +68,35 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+    // order: 2;
   }
 }
 
 .promo__image {
+  display: block;
   margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    z-index: -1;
-    // ВРЕМЕННО
-    top: 400px;
-    left: 150px;
+    position: relative;
+    margin-bottom: 0;
+    width: 709px;
+    height: auto;
+    left: -90px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 150px;
-    left: 500px;
+    //ВРЕМЕННО
+    display: none;
+    // top: 150px;
+    // left: 500px;
+    // order: 4;
   }
 }
 
@@ -95,8 +105,9 @@
   font-size: 14px;
 
   @media (min-width: $tablet-width) {
-    // ВРЕМЕННО
-    margin-bottom: 507px;
+    position: absolute;
+    z-index: 1;
+    bottom: 530px;
     width: 245px;
     font-size: 20px;
     line-height: 20px;
@@ -104,6 +115,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     margin-bottom: 0;
+    top: 0;
+    // order: 3;
   }
 }
