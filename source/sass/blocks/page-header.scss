@@ -96,7 +96,9 @@
   // height: 18px;
   // margin-right: 12px;
   // padding: 20px;
-  // background: url("../img/icon-mobile-menu.svg") no-repeat 50%;
+  // background-image: url("../img/icon-mobile-menu.svg");
+  // background-repeat: no-repeat;
+  // background-position: 50%;
   // background-size: 24px 18px;
   // border: none;
   // cursor: pointer;
@@ -117,7 +119,7 @@
   &::before {
     content: "";
     display: block;
-    background: $link-color;
+    background-color: $link-color;
     width: 24px;
     height: 2px;
     box-shadow: 0 8px 0 $link-color,
@@ -139,7 +141,7 @@
       content: "";
       position: absolute;
       display: block;
-      background: $link-color;
+      background-color: $link-color;
       width: 24px;
       height: 2px;
       transform: rotate(-45deg);

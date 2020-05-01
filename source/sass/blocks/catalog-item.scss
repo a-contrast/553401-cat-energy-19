@@ -130,7 +130,9 @@
     content: "";
     padding: 15px;
     margin-bottom: 22px;
-    background: url("../img/icon-plus-mobile.svg") no-repeat 50% 50%;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: 30px 30px;
   }
 
@@ -141,7 +143,9 @@
     &::before {
       padding: 30px;
       margin-bottom: 50px;
-      background: url("../img/icon-plus.svg") no-repeat 50% 50%;
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
       background-size: 60px 60px;
     }
   }
