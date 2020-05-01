@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 60px;
+    padding-top: 0;
     padding-bottom: 49px;
     border-top: none;
   }
@@ -29,8 +29,14 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 435px;
+    margin-top: 54px;
+    margin-bottom: 0;
     padding-right: 0;
     padding-left: 0;
   }
@@ -78,7 +84,7 @@
     display: flex;
     justify-content: space-between;
     // ВРЕМЕННО
-    margin-bottom: 328px;
+    // margin-bottom: 328px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,27 +131,45 @@
 
 .example__slider {
   @media (min-width: $desktop-width) {
-    width: 620px;
-    padding-left: 50px;
+    width: 650px;
   }
 }
 
 .example__image-container {
   display: flex;
   width: 320px;
-  height: 240px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 7px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: 517px;
+    margin-left: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .example__image {
+  display: block;
   transition: opacity 0.6s ease;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: auto;
+  }
 }
 
 .example__image--right {
   transform: translateX(-320px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(-690px);
+  }
 }
 
 .example__range {
@@ -154,16 +178,19 @@
   align-items: center;
   margin: 0 auto;
   padding-left: 2px;
-  // width: 220px;
-  padding-top: 20px;
+  padding-top: 27px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 14px;
     padding-left: 100px;
     padding-right: 100px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: 0;
+    padding-top: 35px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -234,14 +261,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     top: -17px;
     left: -12px;
     background-color: $bg-main;
     border: 12px solid $standard-color;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px $bg-second,
+    box-shadow: 0 0 0 1px $border-color-5,
       0 3px 5px 0 rgba(0, 0, 0, 0.15);
     transition: transform 1.5s ease;
 
