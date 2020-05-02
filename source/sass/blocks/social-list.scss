@@ -3,9 +3,7 @@
   justify-content: center;
   align-self: center;
   flex-wrap: wrap;
-  // margin-bottom: 18px;
   padding: 9px 0;
-  // padding-bottom: 4px;
   width: 100%;
   border-top: $border-3;
   border-bottom: $border-3;
@@ -28,8 +26,6 @@
 
 .social-list__link {
   display: flex;
-  // width: 40px;
-  // height: 40px;
   padding: 20px;
   background-color: $bg-second;
   background-position: center;
@@ -40,7 +36,7 @@
     background-size: 22px 12px;
 
     @media (min-width: $tablet-width) {
-      background-size: 73%;
+      background-size: 30px 16px;
     }
   }
 
@@ -49,7 +45,7 @@
     background-size: 16px 16px;
 
     @media (min-width: $tablet-width) {
-      background-size: 58%;
+      background-size: 23px 23px;
     }
   }
 
@@ -58,7 +54,7 @@
     background-size: 10px 19px;
 
     @media (min-width: $tablet-width) {
-      background-size: 36%;
+      background-size: 14px 28px;
       background-position: 20% 40%;
     }
   }

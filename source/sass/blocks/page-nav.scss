@@ -1,4 +1,8 @@
 .page-nav {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 50%;
   }
@@ -22,7 +26,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 480px;
-    //ВРЕМЕННО, нужно сделать проверку на разрешение экрана в JS
     height: auto;
 
     &--open {
@@ -62,10 +65,7 @@
   }
 
   &--active {
-    &:hover {
-      opacity: 1;
-    }
-
+    &:hover,
     &:active {
       opacity: 1;
     }

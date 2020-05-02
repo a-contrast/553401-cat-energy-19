@@ -41,22 +41,24 @@
 }
 
 .additional-goods__stock {
+  display: flex;
+  justify-content: center;
   min-height: 289px;
-  padding-top: 60px;
+  padding-top: 65px;
   background-color: $bg-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 0;
     min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding-top: 60px;
+    padding-top: 65px;
     margin-left: 80px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
@@ -65,8 +67,6 @@
 .additional-goods__stock-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
   width: 165px;
 
   @include font-arial(16px, 20px);
@@ -74,18 +74,26 @@
   color: $btn-txt-color;
 
   &::before {
-    content: url("../img/icon-gift.png");
+    display: block;
+    content: "";
+    width: 56px;
+    height: 61px;
     padding: 5px;
-    margin-bottom: 52px;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    background-image: url("../img/icon-gift.png");
+    background-repeat: no-repeat;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    min-height: 200px;
     flex-direction: row;
-    width: 500px;
-    text-align: start;
-    margin-left: 90px;
+    align-items: center;
+    width: 528px;
+    text-align: left;
 
     &::before {
+      min-width: 56px;
       padding: 0;
       margin-bottom: 8px;
       margin-right: 278px;
@@ -93,15 +101,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 165px;
-    text-align: center;
-
     &::before {
-      padding: 5px;
-      margin-bottom: 52px;
-      margin-right: 0;
+      margin-bottom: 60px;
     }
   }
 }

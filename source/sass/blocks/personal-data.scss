@@ -1,8 +1,6 @@
 .personal-data {
-  display: flex;
   border: none;
   padding-bottom: 0;
-  // margin-bottom: 9px;
 
   &::after {
     display: none;
@@ -37,10 +35,9 @@
   padding-left: 13px;
   padding-right: 13px;
   height: 46px;
-  outline: none;
   border: $border-second;
 
-  @include input-border ();
+  @include input-border();
 
   @media (min-width: $tablet-width) {
     height: 52px;

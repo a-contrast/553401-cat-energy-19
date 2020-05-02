@@ -1,5 +1,5 @@
 .form-contacts {
-  padding-top: 14px;
+  padding-top: 0;
 }
 
 .form-contacts__wrapper {
@@ -30,6 +30,7 @@
   &--email::after {
     width: 17px;
     height: 13px;
+    top: 16px;
     right: 16px;
     background-image: url("../img/icon-mail.svg");
     background-size: 17px 13px;
@@ -38,6 +39,7 @@
   &--phone::after {
     width: 20px;
     height: 20px;
+    top: 12px;
     right: 13px;
     background-image: url("../img/icon-phone.svg");
     background-size: 20px 20px;
@@ -45,6 +47,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+
+    &--email::after {
+      top: 20px;
+      right: 20px;
+    }
+
+    &--phone::after {
+      top: 17px;
+      right: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -72,14 +84,14 @@
 
 .form-contacts__input {
   flex-grow: 1;
+  width: 50%;
   margin-left: 10px;
   height: 45px;
   padding-left: 15px;
   padding-right: 40px;
-  outline: none;
   border: $border-second;
 
-  @include input-border ();
+  @include input-border();
 
   @media (min-width: $tablet-width) {
     height: 52px;

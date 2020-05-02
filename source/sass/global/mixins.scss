@@ -12,7 +12,7 @@
   line-height: $line-height;
 }
 
-@mixin input-border () {
+@mixin input-border() {
   &:hover {
     border-color: $border-color-4;
   }

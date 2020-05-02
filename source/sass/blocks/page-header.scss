@@ -87,10 +87,7 @@
 .page-header__logo--main-page {
   cursor: auto;
 
-  &:hover {
-    opacity: 1;
-  }
-
+  &:hover,
   &:active {
     opacity: 1;
   }
@@ -109,21 +106,6 @@
 }
 
 .page-header__toggle {
-  // width: 24px;
-  // height: 18px;
-  // margin-right: 12px;
-  // padding: 20px;
-  // background-image: url("../img/icon-mobile-menu.svg");
-  // background-repeat: no-repeat;
-  // background-position: 50%;
-  // background-size: 24px 18px;
-  // border: none;
-  // cursor: pointer;
-
-  // &--close {
-  //   background-image: url("../img/icon-close.svg");
-  // }
-
   position: relative;
   width: 40px;
   height: 40px;
