@@ -39,7 +39,7 @@
   height: 46px;
   outline: none;
   border: $border-second;
-  
+
   @include input-border ();
 
   @media (min-width: $tablet-width) {
