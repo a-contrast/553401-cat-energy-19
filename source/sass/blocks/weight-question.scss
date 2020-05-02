@@ -42,7 +42,7 @@
   background-color: $radio-color;
   border: 8px solid $radio-color;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px $bg-second;
+  box-shadow: 0 0 0 1px $border-color-4;
 
   @media (min-width: $tablet-width) {
     margin-left: 28px;
@@ -55,4 +55,8 @@
 
 .weight-question__input:checked + .weight-question__radio-box {
   background-color: $bg-main;
+}
+
+.weight-question__label:hover .weight-question__radio-box {
+  box-shadow: 0 0 0 1px $border-color-8;
 }

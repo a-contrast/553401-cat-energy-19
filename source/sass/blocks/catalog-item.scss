@@ -21,9 +21,12 @@
     padding-right: 37px;
     padding-bottom: 40px;
     margin-bottom: 63px;
+    margin-top: 77px;
+    // margin-bottom: 58px;
     margin-left: 30px;
     margin-right: 30px;
-    background-image: linear-gradient(to bottom, transparent 0, transparent 77px, $bg-second 77px, $bg-second 100%);
+    background-color: $bg-second;
+    // background-image: linear-gradient(to bottom, transparent 0, transparent 82px, $bg-second 82px, $bg-second 100%);
     border: none;
 
     &:first-child {
@@ -32,15 +35,17 @@
 
     &:last-child {
       justify-content: space-between;
-      min-height: 430px;
-      margin-top: 78px;
+      min-height: 432px;
+      // margin-top: 83px;
       padding-top: 27px;
       padding-bottom: 39px;
       background-image: none;
-      box-shadow: 0 -1px 0 0 $border-color-2,
-        0 1px 0 0 $border-color-2;
-      border-left: $border-2;
-      border-right: $border-2;
+      background-color: $standard-color;
+      border: $border-2;
+      // box-shadow: 0 -1px 0 0 $border-color-2,
+      //   0 1px 0 0 $border-color-2;
+      // border-left: $border-2;
+      // border-right: $border-2;
     }
   }
 
@@ -48,7 +53,9 @@
     width: 245px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 66px;
+    margin-bottom: 71px;
+    margin-top: 71px;
+    // margin-bottom: 142px;
   }
 }
 
@@ -63,8 +70,32 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    min-height: 212px;
+    margin-top: -86px;
+    margin-bottom: 37px;
+    margin-left: -38px;
+    margin-right: -37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -81px;
+    margin-bottom: 36px;
     min-height: 208px;
-    margin-bottom: 32px;
+  }
+}
+
+.catalog-item__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: auto;
   }
 }
 
@@ -75,6 +106,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    flex-grow: 0;
   }
 }
 
@@ -130,7 +162,9 @@
     content: "";
     padding: 15px;
     margin-bottom: 22px;
-    background: url("../img/icon-plus-mobile.svg") no-repeat 50% 50%;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: 30px 30px;
   }
 
@@ -141,7 +175,9 @@
     &::before {
       padding: 30px;
       margin-bottom: 50px;
-      background: url("../img/icon-plus.svg") no-repeat 50% 50%;
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
       background-size: 60px 60px;
     }
   }

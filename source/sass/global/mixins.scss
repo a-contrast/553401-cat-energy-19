@@ -12,9 +12,15 @@
   line-height: $line-height;
 }
 
-// @mixin wrapper-form () {
-//   // padding-left: 113px;
-//   // padding-right: 110px;
-//   padding-left: $wrapper-desk-left;
-//   padding-right: $wrapper-desk-right;
-// }
+@mixin input-border () {
+  &:hover {
+    border-color: $border-color-4;
+  }
+
+  &:focus {
+    // border-width: 2px;
+    border-color: $input-color;
+    box-shadow: 1px 1px 0 0 $input-color inset,
+      -1px -1px 0 0 $input-color inset;
+  }
+}

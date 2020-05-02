@@ -25,7 +25,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 29px;
@@ -37,9 +37,9 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 18px;
+    padding-top: 51px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 
     &--main::after {
       width: 50%;
@@ -59,7 +59,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    padding-top: 3px;
+    padding-top: 4px;
     padding-bottom: 0;
     border: none;
   }
@@ -70,13 +70,30 @@
   padding-bottom: 4px;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 0;
+    padding-bottom: 3px;
   }
 }
 
 .page-header__logo--main-page {
   cursor: auto;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .page-header__logo-image {
@@ -96,7 +113,9 @@
   // height: 18px;
   // margin-right: 12px;
   // padding: 20px;
-  // background: url("../img/icon-mobile-menu.svg") no-repeat 50%;
+  // background-image: url("../img/icon-mobile-menu.svg");
+  // background-repeat: no-repeat;
+  // background-position: 50%;
   // background-size: 24px 18px;
   // border: none;
   // cursor: pointer;
@@ -117,7 +136,7 @@
   &::before {
     content: "";
     display: block;
-    background: $link-color;
+    background-color: $link-color;
     width: 24px;
     height: 2px;
     box-shadow: 0 8px 0 $link-color,
@@ -139,7 +158,7 @@
       content: "";
       position: absolute;
       display: block;
-      background: $link-color;
+      background-color: $link-color;
       width: 24px;
       height: 2px;
       transform: rotate(-45deg);

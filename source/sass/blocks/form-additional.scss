@@ -20,19 +20,11 @@
 
 .form-additional__container {
   display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    // margin-right: -30px;
-    // margin-left: -30px;
-  }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    // margin-right: -40px;
-    // margin-left: -40px;
     padding-left: $wrapper-desk-left;
     padding-right: $wrapper-desk-right;
   }
@@ -42,18 +34,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+  min-width: 200px;
 
   @media (min-width: $tablet-width) {
     min-width: calc(50% - 30px);
     margin-bottom: 33px;
-    // margin-left: 30px;
-    // margin-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: calc(25% - 60px);
-    // margin-left: 40px;
-    // margin-right: 40px;
   }
 }
 

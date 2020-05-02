@@ -10,6 +10,8 @@
   resize: none;
   border: $border-second;
 
+  @include input-border ();
+
   @media (min-width: $tablet-width) {
     height: 174px;
     padding: 14px 18px;
