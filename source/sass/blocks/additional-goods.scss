@@ -46,6 +46,7 @@
   background-color: $bg-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
