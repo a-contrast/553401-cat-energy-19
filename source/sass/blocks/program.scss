@@ -192,6 +192,10 @@
   padding-top: 5px;
   padding-bottom: 5px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @include font-oswald(16px, 16px);
   text-transform: uppercase;
   color: $link-color;

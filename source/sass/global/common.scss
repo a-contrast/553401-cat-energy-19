@@ -57,9 +57,25 @@
   background-color: $bg-main;
   border: none;
 
+  &:hover {
+    background-color: $button-hvr;
+  }
+
+  &:active {
+    color: $btn-txt-down;
+  }
+
   &--bg-second {
     color: $link-color;
     background-color: $bg-second;
+
+    &:hover {
+      background-color: $button-hvr-second;
+    }
+
+    &:active {
+      color: $btn-txt-grey-down;
+    }
   }
 }
 
