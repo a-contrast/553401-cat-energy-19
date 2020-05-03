@@ -1,6 +1,6 @@
 
 .form-comment {
-  padding-top: 15px;
+  padding-top: 0;
 }
 
 .form-comment__textarea {
@@ -10,7 +10,7 @@
   resize: none;
   border: $border-second;
 
-  @include input-border ();
+  @include input-border();
 
   @media (min-width: $tablet-width) {
     height: 174px;

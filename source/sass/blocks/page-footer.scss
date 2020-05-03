@@ -19,7 +19,7 @@
   padding: 27px 0;
 
   @media (min-width: $tablet-width) {
-    text-align: start;
+    text-align: left;
     padding-top: 5px;
     padding-bottom: 0;
   }
@@ -45,7 +45,6 @@
   position: relative;
 }
 
-// ВРЕМЕННО
 .page-footer__copyright-icon {
   display: inline-block;
   width: 41px;

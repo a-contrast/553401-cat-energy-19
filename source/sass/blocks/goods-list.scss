@@ -105,12 +105,12 @@
 .goods-list__item-value {
   @media (min-width: $tablet-width) {
     min-width: 70px;
-    text-align: end;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 60px;
-    text-align: start;
+    text-align: left;
   }
 }
 

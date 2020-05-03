@@ -1,11 +1,10 @@
 .weight-question {
-  display: flex;
   border: $border-second;
   padding-top: 21px;
   padding-bottom: 9px;
   padding-left: 0;
   padding-right: 0;
-  // margin-bottom: 8px;
+
   &::after {
     display: none;
   }
