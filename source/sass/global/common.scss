@@ -92,8 +92,8 @@
 }
 
 .title-after {
-  &::after,
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     background-color: #68b738;
@@ -103,8 +103,12 @@
     z-index: -1;
   }
 
-  &::after {
+  &::before {
     right: 0;
+  }
+
+  &::after {
+    left: 0;
   }
 }
 
