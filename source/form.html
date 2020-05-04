@@ -12,36 +12,38 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-form">
-  <header class="page-header wrapper container">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
-            alt="Интернет-магазин «Cat Energy»">
-        </picture>
-      </a>
-      <button class="page-header__toggle page-header__toggle--no-js" aria-label="Открыть меню" type="button"></button>
+<body class="page-form overflow">
+  <header class="page-header">
+    <div class="page-header__container wrapper container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+              alt="Интернет-магазин «Cat Energy»">
+          </picture>
+        </a>
+        <button class="page-header__toggle page-header__toggle--no-js" aria-label="Открыть меню" type="button"></button>
+      </div>
+      <nav class="page-nav">
+        <ul class="page-nav__list page-nav__list--no-js list">
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link page-nav__link--active">Подбор программы</a>
+        </ul>
+      </nav>
     </div>
-    <nav class="page-nav">
-      <ul class="page-nav__list page-nav__list--no-js list">
-        <li class="page-nav__item">
-          <a class="page-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="page-nav__item">
-          <a class="page-nav__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="page-nav__item">
-          <a class="page-nav__link page-nav__link--active">Подбор программы</a>
-      </ul>
-    </nav>
   </header>
 
-  <main class="page-main container">
+  <main class="page-main">
 
-    <section class="selection-program">
+    <section class="selection-program container">
       <h1 class="selection-program__title wrapper">Подбор программы</h1>
       <p class="selection-program__description wrapper">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="selection-program__form program-form" action="https://echo.htmlacademy.ru" method="post">
@@ -142,41 +144,45 @@
     </section>
 
     <section class="contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="contacts__wrapper contacts__wrapper--bg-color wrapper">
-        <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+      <div class="contacts__container container">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__wrapper wrapper">
+          <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+        </div>
       </div>
       <div class="contacts__map">
       </div>
     </section>
   </main>
 
-  <footer class="page-footer wrapper container">
-    <a class="page-footer__logo-title logo-title" href="index.html">
-      <img class="logo-title__image" src="img/logo-footer.svg" width="130" height="25"
-        alt="Интернет-магазин «Cat Energy»">
-    </a>
-    <ul class="page-footer__social social-list list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы в Вконтакте</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">
-          <span class="visually-hidden">Мы в Инстаграме</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Мы в Фейсбуке</span>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright">
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="page-footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
+  <footer class="page-footer">
+    <div class="page-footer__container wrapper  container">
+      <a class="page-footer__logo-title logo-title" href="index.html">
+        <img class="logo-title__image" src="img/logo-footer.svg" width="128" height="24"
+          alt="Интернет-магазин «Cat Energy»">
+      </a>
+      <ul class="page-footer__social social-list list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Мы в Инстаграме</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
     </div>
   </footer>
   <script src="js/script.js"></script>

@@ -41,6 +41,10 @@
   overflow: hidden;
 }
 
+.overflow {
+  overflow-x: hidden;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -58,7 +62,8 @@
   background-color: $bg-main;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-hvr;
   }
 
@@ -70,7 +75,8 @@
     color: $link-color;
     background-color: $bg-second;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $button-hvr-second;
     }
 

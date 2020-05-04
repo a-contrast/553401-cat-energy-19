@@ -31,9 +31,15 @@
   counter-reset: section;
 
   @media (min-width: $tablet-width) {
+    max-width: 970px;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
   }
 }
 

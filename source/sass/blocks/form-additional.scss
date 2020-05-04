@@ -68,5 +68,6 @@
 }
 
 .form-additional__input:focus + .form-additional__check-box {
+  outline: $outline-color dotted 1px;
   outline: -webkit-focus-ring-color auto 1px;
 }
