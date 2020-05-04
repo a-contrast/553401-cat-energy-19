@@ -61,9 +61,7 @@
 }
 
 .weight-question__input:focus + .weight-question__radio-box {
-  /* stylelint-disable */
   //фоллбэк для ie
   outline: $outline-color dotted 1px;
-  outline: -webkit-focus-ring-color auto 1px;
-  /* stylelint-enable */
+  outline: -webkit-focus-ring-color auto 1px; /* stylelint-disable-line declaration-block-no-duplicate-properties */
 }
