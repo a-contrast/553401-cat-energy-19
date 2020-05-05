@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   min-width: 163px;
-  padding: 21px 0;
+  padding: 19px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -52,11 +52,17 @@
 
 .page-footer__copyright-icon {
   display: inline-block;
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   margin-left: auto;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  background-position: -6px -2px;
+  margin-right: -8px;
+  fill: $social-color;
+
+  &:hover {
+    fill: $bg-main;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
