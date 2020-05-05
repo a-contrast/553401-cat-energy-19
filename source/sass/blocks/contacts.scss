@@ -53,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 88px;
+    margin-right: 90px;
   }
 }
 
@@ -88,7 +88,6 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-clip: border-box;
-  // background-size: auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");

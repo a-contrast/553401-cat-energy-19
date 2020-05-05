@@ -1,6 +1,4 @@
 .program-form {
-  display: flex;
-  flex-direction: column;
   padding-top: 20px;
   margin-bottom: 22px;
 
@@ -8,12 +6,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 82px;
   }
 }
 
@@ -27,7 +26,6 @@
 
 .program-form__fieldset {
   position: relative;
-  margin: 0;
   border: none;
   margin-bottom: 8px;
   padding-bottom: 11px;
@@ -118,8 +116,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-right: 0;
     padding-left: $wrapper-desk-left;
     padding-right: $wrapper-desk-right;
   }
