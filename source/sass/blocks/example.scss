@@ -1,7 +1,14 @@
 .example {
+  background-color: $bg-second;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, $bg-second 0, $bg-second 462px, $standard-color 462px, $standard-color 100%);
+  }
+}
+
+.example__container {
   padding-top: 17px;
   padding-bottom: 11px;
-  background-color: $bg-second;
 
   @media (max-width: $desktop-width) {
     padding-left: 0;
@@ -12,7 +19,6 @@
     padding-top: 43px;
     padding-bottom: 50px;
     border-top: $border-2;
-    background-image: linear-gradient(to top, $bg-second 0, $bg-second 462px, $standard-color 462px, $standard-color 100%);
   }
 
   @media (min-width: $desktop-width) {

@@ -1,27 +1,32 @@
 .page-footer {
+  background-color: $bg-second;
+}
+
+.page-footer__container {
   display: flex;
   flex-direction: column;
   padding-top: 12px;
   padding-bottom: 2px;
-  background-color: $bg-second;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-top: 53px;
-    padding-bottom: 53px;
+    align-items: center;
+    min-height: 150px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .page-footer__logo-title {
   align-self: center;
-  min-width: 163px;
   text-align: center;
   padding: 27px 0;
 
   @media (min-width: $tablet-width) {
-    text-align: left;
-    padding-top: 5px;
+    margin-right: 35px;
+    padding-top: 3px;
     padding-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -29,7 +34,7 @@
   display: flex;
   align-items: center;
   min-width: 163px;
-  padding: 18px 0;
+  padding: 19px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -47,11 +52,17 @@
 
 .page-footer__copyright-icon {
   display: inline-block;
-  width: 41px;
+  width: 40px;
   height: 40px;
   margin-left: auto;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 7px 0;
+  margin-right: -8px;
+  fill: $social-color;
+
+  &:hover {
+    fill: $bg-main;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

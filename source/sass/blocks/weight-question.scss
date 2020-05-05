@@ -59,3 +59,9 @@
 .weight-question__label:hover .weight-question__radio-box {
   box-shadow: 0 0 0 1px $border-color-8;
 }
+
+.weight-question__input:focus + .weight-question__radio-box {
+  //фоллбэк для ie
+  outline: $outline-color dotted 1px;
+  outline: -webkit-focus-ring-color auto 1px; /* stylelint-disable-line declaration-block-no-duplicate-properties */
+}

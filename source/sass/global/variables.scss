@@ -24,6 +24,8 @@ $transparent: transparent;
 $bg-promo: #65a93c;
 $button-hvr: #5eaa2f;
 $button-hvr-second: #ebebeb;
+$outline-color: #000000;
+$social-color: #696969;
 //
 $border-1: 1px solid $border-color-1;
 $border-2: 1px solid $border-color-2;
@@ -36,3 +38,6 @@ $desktop-width: 1280px;
 //
 $wrapper-desk-left: 60px;
 $wrapper-desk-right: 60px;
+//
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
