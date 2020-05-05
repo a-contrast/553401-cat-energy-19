@@ -10,8 +10,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-top: 53px;
-    padding-bottom: 53px;
+    align-items: center;
+    min-height: 150px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -22,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 35px;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 0;
     text-align: left;
   }
