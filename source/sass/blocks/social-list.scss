@@ -30,6 +30,15 @@
   justify-content: center;
   width: 30px;
   height: 30px;
+  fill: $social-color;
+
+  &:hover {
+    fill: $bg-main;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--facebook {
     @media (min-width: $tablet-width) {
