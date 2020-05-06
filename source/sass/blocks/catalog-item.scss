@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
   padding-left: 19px;
   padding-right: 19px;
   padding-bottom: 24px;
@@ -12,6 +13,28 @@
 
   &:first-child {
     border-top: $border-1;
+  }
+
+  &:last-child {
+    padding-top: 52px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 2px;
+      height: 30px;
+      top: 26px;
+      background-color: $link-color;
+      opacity: 0.2;
+    }
+
+    &::after {
+      width: 30px;
+      height: 2px;
+      top: 40px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -34,11 +57,21 @@
     &:last-child {
       justify-content: space-between;
       min-height: 432px;
-      padding-top: 27px;
+      padding-top: 136px;
       padding-bottom: 39px;
       background-image: none;
       background-color: $standard-color;
       border: $border-2;
+
+      &::before {
+        height: 60px;
+        top: 54px;
+      }
+
+      &::after {
+        width: 60px;
+        top: 83px;
+      }
     }
   }
 
@@ -148,29 +181,9 @@
   @include font-oswald(16px,20px);
   text-transform: uppercase;
 
-  &::before {
-    display: block;
-    content: "";
-    padding: 15px;
-    margin-bottom: 22px;
-    background-image: url("../img/icon-plus-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 30px 30px;
-  }
-
   @media (min-width: $tablet-width) {
     width: 140px;
     font-size: 20px;
-
-    &::before {
-      padding: 30px;
-      margin-bottom: 50px;
-      background-image: url("../img/icon-plus.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 60px 60px;
-    }
   }
 }
 

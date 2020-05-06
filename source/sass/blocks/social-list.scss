@@ -1,7 +1,6 @@
 .social-list {
   display: flex;
   justify-content: center;
-  // align-self: center;
   flex-wrap: wrap;
   padding-top: 17px;
   padding-bottom: 11px;
@@ -42,26 +41,13 @@
 
   &--facebook {
     @media (min-width: $tablet-width) {
-      justify-content: flex-start;
+      padding-right: 13px;
     }
   }
 }
 
 .social-list__icon {
   @media (min-width: $tablet-width) {
-    &--vk {
-      width: 30px;
-      height: auto;
-    }
-
-    &--insta {
-      width: 23px;
-      height: auto;
-    }
-
-    &--fb {
-      width: 14px;
-      height: auto;
-    }
+    transform: scale(1.4);
   }
 }
