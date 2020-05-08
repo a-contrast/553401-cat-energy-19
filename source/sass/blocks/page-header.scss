@@ -137,6 +137,7 @@
       position: absolute;
       width: 24px;
       height: 2px;
+      top: 19px;
       transform: rotate(45deg);
       box-shadow: none;
     }
@@ -148,6 +149,7 @@
       background-color: $link-color;
       width: 24px;
       height: 2px;
+      top: 19px;
       transform: rotate(-45deg);
     }
   }

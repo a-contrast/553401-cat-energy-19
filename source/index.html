@@ -9,10 +9,14 @@
     document.createElement( "picture" );
   </script>
   <script src="js/picturefill.min.js" async></script>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-index">
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header page-header--main">
     <div class="page-header__container wrapper container">
       <div class="page-header__wrapper">
@@ -171,7 +175,7 @@
           <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
             <!-- <span class="visually-hidden">Мы в Вконтакте</span> -->
             <svg class="social-list__icon social-list__icon--vk" width="22" height="12">
-              <use xlink:href="img/sprite-svg.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
@@ -179,7 +183,7 @@
           <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
             <!-- <span class="visually-hidden">Мы в Инстаграме</span> -->
             <svg class="social-list__icon social-list__icon--insta" width="17" height="17">
-              <use xlink:href="img/sprite-svg.svg#icon-insta"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
@@ -187,7 +191,7 @@
           <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
             <!-- <span class="visually-hidden">Мы в Фейсбуке</span> -->
             <svg class="social-list__icon social-list__icon--fb" width="10" height="19">
-              <use xlink:href="img/sprite-svg.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
@@ -196,7 +200,7 @@
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="page-footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <svg class="page-footer__copyright-svg" width="40" height="40">
-            <use xlink:href="img/sprite-svg.svg#icon-academy"></use>
+            <use xlink:href="#icon-academy"></use>
           </svg>
         </a>
       </div>

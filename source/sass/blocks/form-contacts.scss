@@ -59,10 +59,27 @@
 
 .form-contacts__icon {
   position: absolute;
-  right: 15px;
+
+  &--mail {
+    top: 15px;
+    right: 16px;
+  }
+
+  &--phone {
+    top: 12px;
+    right: 13px;
+  }
 
   @media (min-width: $tablet-width) {
     right: 20px;
+
+    &--mail {
+      top: 20px;
+    }
+
+    &--phone {
+      top: 17px;
+    }
   }
 }
 
