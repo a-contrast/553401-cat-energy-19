@@ -18,7 +18,6 @@
   }
 
   &:focus {
-    // border-width: 2px;
     border-color: $input-color;
     box-shadow: 1px 1px 0 0 $input-color inset,
       -1px -1px 0 0 $input-color inset;

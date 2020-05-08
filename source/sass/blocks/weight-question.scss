@@ -18,7 +18,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 50%;
     margin: 0;
+    margin-left: 40px;
   }
 }
 

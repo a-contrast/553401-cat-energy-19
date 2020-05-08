@@ -15,6 +15,7 @@
 .contacts__container {
   @media (min-width: $desktop-width) {
     position: relative;
+    z-index: 1;
   }
 }
 
@@ -82,7 +83,8 @@
 }
 
 .contacts__map {
-  min-height: 361px;
+  height: 361px;
+  overflow: hidden;
   background-color: $bg-second;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
@@ -94,7 +96,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 396px;
+    height: 396px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -103,7 +105,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 400px;
+    height: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

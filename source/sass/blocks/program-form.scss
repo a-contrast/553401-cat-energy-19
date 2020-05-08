@@ -17,8 +17,11 @@
 }
 
 .program-form__wrapper {
+  margin-bottom: 20px;
+
   @media (min-width: $desktop-width) {
     display: flex;
+    margin-bottom: 70px;
     padding-left: $wrapper-desk-left;
     padding-right: $wrapper-desk-right;
   }
@@ -41,26 +44,6 @@
     margin-bottom: 52px;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.program-form__fieldset-wrapper {
-  @media (max-width: $tablet-width - 1px) {
-    padding: 12px 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 50%;
-    margin-left: 40px;
-    margin-right: 0;
-    margin-bottom: 70px;
-    padding: 0;
   }
 }
 
