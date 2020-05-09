@@ -9,8 +9,8 @@
   @media (min-width: $desktop-width) {
     //Следующая строка для того, чтобы при масштабе в 100% можно было сделать pixel-perfect
     // на экране в 1366px? wrapper при этом тоже имеет значения 60px, для этого создал переменные
-    max-width: 1220px + $wrapper-desk-right + $wrapper-desk-left;
-    // max-width: 1440px;
+    // max-width: 1220px + $wrapper-desk-right + $wrapper-desk-left;
+    max-width: 1440px;
   }
 }
 
