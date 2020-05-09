@@ -45,6 +45,7 @@
   justify-content: center;
   min-height: 289px;
   padding-top: 65px;
+  padding-bottom: 10px;
   background-color: $bg-main;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -56,7 +57,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 11px;
     min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
@@ -99,7 +100,6 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-    min-height: 200px;
     flex-direction: row;
     align-items: center;
     width: 528px;
