@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-bottom: 11px;
   width: 100%;
   border-top: $border-3;
@@ -16,6 +16,7 @@
 
 .social-list__item {
   margin-right: 25px;
+  padding-top: 3px;
   padding-bottom: 4px;
 
   &:last-child {

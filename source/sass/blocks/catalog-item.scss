@@ -1,7 +1,5 @@
 .catalog-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   position: relative;
   padding-left: 19px;
@@ -26,6 +24,7 @@
       width: 2px;
       height: 30px;
       top: 26px;
+      left: 50%;
       background-color: $link-color;
       opacity: 0.2;
     }
@@ -34,11 +33,13 @@
       width: 30px;
       height: 2px;
       top: 40px;
+      left: calc(50% - 14px);
     }
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    justify-content: flex-start;
     width: 324px;
     padding-left: 38px;
     padding-right: 37px;
@@ -56,6 +57,7 @@
 
     &:last-child {
       justify-content: space-between;
+      align-items: center;
       min-height: 432px;
       padding-top: 136px;
       padding-bottom: 39px;
@@ -71,6 +73,7 @@
       &::after {
         width: 60px;
         top: 83px;
+        left: calc(50% - 29px);
       }
     }
   }
@@ -91,10 +94,11 @@
 
 .catalog-item__img-link {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
+    align-items: flex-end;
     height: 212px;
     margin-top: -86px;
     margin-bottom: 37px;
@@ -128,15 +132,17 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding: 21px 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     flex-grow: 0;
+    padding: 0;
   }
 }
 
 .catalog-item__link {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   width: 80px;
 
   @include font-oswald(16px,20px);
@@ -153,27 +159,13 @@
 }
 
 .catalog-item__specs-list {
-  @include font-arial(12px,16px);
-
   @media (min-width: $tablet-width) {
-    font-size: 16px;
     margin-bottom: 33px;
   }
 }
 
-.specs-list__item {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    border-bottom: $border-4;
-    padding-top: 8px;
-    padding-bottom: 7px;
-  }
-}
-
 .catalog-item__show-all {
-  display: inline-block;
+  width: 100%;
   margin-bottom: 8px;
   padding-top: 27px;
   text-align: center;
@@ -199,5 +191,11 @@
     width: 170px;
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+.catalog-item__button-buy {
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
   }
 }

@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 13.7%;
+    padding-left: 13.6%;
     margin-bottom: 0;
     color: $link-color;
     text-align: left;
@@ -72,6 +72,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 420px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
@@ -118,8 +119,8 @@
     bottom: 530px;
     width: 245px;
     font-size: 20px;
-    line-height: 20px;
-    padding: 16px 0;
+    line-height: 30px;
+    padding: 11px 0;
   }
 
   @media (min-width: $desktop-width) {

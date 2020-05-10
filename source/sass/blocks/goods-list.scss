@@ -117,5 +117,6 @@
 .goods-list__button-buy {
   @media (min-width: $desktop-width) {
     width: 245px;
+    flex-shrink: 0;
   }
 }
