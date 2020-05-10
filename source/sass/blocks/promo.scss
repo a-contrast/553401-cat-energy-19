@@ -36,6 +36,7 @@
     color: $link-color;
     text-align: left;
     align-items: flex-start;
+    overflow-x: hidden;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +45,7 @@
     padding-top: 100px;
     padding-left: $wrapper-desk-left + 80px;
     margin-bottom: 80px;
+    overflow-x: visible;
   }
 }
 

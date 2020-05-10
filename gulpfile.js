@@ -44,12 +44,20 @@ gulp.task("webp", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/js/**",
       "source/*.ico"
     ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("copypoly", function () {
+  return gulp.src([
+      "source/polyfills/**"
+    ], {
+      base: "source/polyfills/"
+    })
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("clean", function () {
@@ -116,6 +124,7 @@ gulp.task("build", gulp.series(
   "images",
   "webp",
   "copy",
+  "copypoly",
   "uglify",
   "css",
   "sprite",
