@@ -15,6 +15,15 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
+
+gulp.task("uglify", function () {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js/"));
+});
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -23,25 +32,32 @@ gulp.task("images", function () {
       imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img/"));
+    .pipe(gulp.dest("build/img/"));
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img/"));
+    .pipe(gulp.dest("build/img/"));
 });
 
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**",
-      "source/js/**",
       "source/*.ico"
     ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("copypoly", function () {
+  return gulp.src([
+      "source/polyfills/**"
+    ], {
+      base: "source/polyfills/"
+    })
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("clean", function () {
@@ -76,6 +92,10 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest("build"))
 });
 
@@ -101,9 +121,11 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series(
   "clean",
-  // "images",
-  // "webp",
+  "images",
+  "webp",
   "copy",
+  "copypoly",
+  "uglify",
   "css",
   "sprite",
   "html"

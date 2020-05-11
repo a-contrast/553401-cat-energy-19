@@ -84,8 +84,14 @@
 }
 
 .promo__picture {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: -90px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 1;
+    left: auto;
   }
 }
 
@@ -94,14 +100,13 @@
   margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     margin-bottom: 0;
     width: 709px;
     height: auto;
-    left: -90px;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 552px;
     right: 24%;
     bottom: 80px;
