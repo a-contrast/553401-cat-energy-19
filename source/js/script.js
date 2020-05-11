@@ -25,13 +25,13 @@ if (document.querySelector(".page-index")) {
 
   sliderBtnLeft.addEventListener("click", function (evt) {
     sliderToggle.classList.remove("example__progress-toggle--right");
-    sliderImgLeft.classList.remove("opacity");
-    sliderImgRight.classList.add("opacity");
+    sliderImgRight.classList.remove("clip");
+    sliderImgLeft.classList.add("clip");
   });
 
   sliderBtnRight.addEventListener("click", function (evt) {
     sliderToggle.classList.add("example__progress-toggle--right");
-    sliderImgLeft.classList.add("opacity");
-    sliderImgRight.classList.remove("opacity");
+    sliderImgRight.classList.add("clip");
+    sliderImgLeft.classList.remove("clip");
   });
 }
