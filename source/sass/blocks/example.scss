@@ -148,8 +148,9 @@
 
 .example__image-container {
   display: flex;
+  position: relative;
   width: 320px;
-  height: auto;
+  height: 240px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -167,7 +168,9 @@
 
 .example__image {
   display: block;
-  transition: opacity 0.6s ease;
+  position: absolute;
+  transition: all 0.6s ease;
+  transition: all 0.6s ease;
 
   @media (min-width: $tablet-width) {
     width: 690px;
@@ -175,12 +178,16 @@
   }
 }
 
-.example__image--right {
-  transform: translateX(-320px);
+.example__image--left {
+  clip: rect(auto, 320px, auto, 320px);
 
   @media (min-width: $tablet-width) {
-    transform: translateX(-690px);
+    clip: rect(auto, 690px, auto, 690px);
   }
+}
+
+.example__image--right {
+  clip: rect(auto, 0, auto, 0);
 }
 
 .example__range {
@@ -290,7 +297,7 @@
     box-shadow: 0 0 0 1px $standard-color,
       0 0 0 2px $border-color-5,
       0 3px 5px 0 $progress-shadow;
-    transition: transform 1.5s ease;
+    transition: transform 0.6s ease;
 
     &--right {
       transform: translateX(416px);
@@ -301,7 +308,7 @@
         0 0 0 2px $border-color-5,
         0 6px 5px 0 $progress-shadow;
     }
-
+    &:focus,
     &:active {
       box-shadow: 0 0 0 2px $bg-main,
         0 8px 4px 0 $progress-shadow;
