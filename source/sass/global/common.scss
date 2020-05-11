@@ -119,7 +119,7 @@
   }
 }
 
-.example__image-container .opacity {
+.example__image-container .clip {
   clip: rect(auto, 320px, auto, 0);
   @media (min-width: $tablet-width) {
     clip: rect(auto, 690px, auto, 0);
